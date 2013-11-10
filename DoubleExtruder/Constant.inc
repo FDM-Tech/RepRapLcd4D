@@ -25,11 +25,11 @@
 //DEBUG_NO_EXTR_PREVENT
 //DEBUG_NO_BOOTSPLASH
 
-VERSION "0.21" //
-AUTHOR "marcomail.anto@gmail.com"
+VERSION "0.1" //
+AUTHOR "www.FDM-Tec.de"
 
 //CONTRAST_TIMEOUT 5000 //Screen Timeout, Comment out to disable
-STARTUP_TIMEOUT 800
+STARTUP_TIMEOUT 3000
 
 SOUND_VOLUME 30 //60 for low PWR
 //SOUND_BED_NOTIFY //to change, does not work correctly

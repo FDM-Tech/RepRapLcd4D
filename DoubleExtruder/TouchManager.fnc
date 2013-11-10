@@ -314,7 +314,7 @@ func TouchEvent(var x,var y)
              updateButtonZCal(Z_DEC3_MINUS,ON);
         else if(!checkRegion( @ WIN_Z_CAL_TOUCH_REGION)) //out of Window, return to Main
             WINDOW:=W_MAIN;
-            gfx_RectangleFilled(0, 176, 319, 224, BLACK);
+
             drawGfxInterface();
         endif
     endif

@@ -18,24 +18,34 @@
  */
 #inherit "Constant.inc"
 
+
+
 func drawGfxInterface()
     if(WINDOW==W_MAIN)
         MainGfxInterface();
-    else if(WINDOW==W_SDCARD)
+        drawButtonControl();
+            else if(WINDOW==W_SDCARD)
          drawSDScreen();
+
+
     endif
 endfunc
-
 func MainGfxInterface()
+
     drawAxisMove();
     drawStatusBar();
     drawTempIndicator();
-    drawButtonControl();
     updateMessage(str_Ptr(msg)," "," ");
-endfunc
+
+      endfunc
+
+
+
+
 
 
 func drawAxisMove()
+
     img_Show(hndl,iImage1); //X-Y pos Image
     img_Show(hndl,iImage2); //Z pos Image
     img_Show(hndl,iImage3); //SD card Image
@@ -47,18 +57,22 @@ endfunc
 
 
 func drawButtonControl()
+
+gfx_RectangleFilled(0, 181, 480, 252, BLACK);
+ drawStatusBar();
+ drawTempIndicator();
     //draw Extruder/Reverse Section
     updateButtonExtrude(FALSE);
-    setFontMessage(92, 188);
+    setFontMessage(132, 192);
     printBuffer("mm");
 
     updateButtonReverse(FALSE);
-    setFontMessage(92,204);
+    setFontMessage(132,220);
     printBuffer("mm/min");
 
-    gfx_Panel(PANEL_RAISED, 60, 184, 27, 14, 0xD699); // panel Ex mm
+    gfx_Panel(PANEL_RAISED, 86, 184, 40, 25, 0xD699); // panel Ex mm
     updateExmm(str_Ptr(ex_setmm),BLACK);
-    gfx_Panel(PANEL_RAISED, 60, 199, 27, 14, 0xD699); // pnael Ex mm/min
+    gfx_Panel(PANEL_RAISED, 86, 212, 40, 25, 0xD699); // pnael Ex mm/min
     updateExmm_min(str_Ptr(ex_setmm_min),BLACK);
 
     //draw Button Temp Extruder Set
@@ -66,12 +80,12 @@ func drawButtonControl()
 
     updateButtonBedOff(FALSE);
 
-    gfx_Panel(PANEL_RAISED, 172, 184, 27, 14, 0xD699); // panel Ex Temp
-    gfx_Panel(PANEL_RAISED, 172, 199, 27, 14, 0xD699); // panel Bed Temp
+    gfx_Panel(PANEL_RAISED, 270, 184, 40, 25, 0xD699); // panel Ex Temp
+    gfx_Panel(PANEL_RAISED, 270, 212, 40, 25, 0xD699); // panel Bed Temp
 
-    setFontMessage(202, 188);
+    setFontMessage(316, 192);
     printBuffer("C");
-    setFontMessage(202, 204);
+    setFontMessage(316, 220);
     printBuffer("C");
 
     updateExSetTemp(str_Ptr(ex_setTemp),BLACK);
@@ -83,48 +97,48 @@ func drawButtonControl()
 
     updateButtonSwitchEx(UPDATE);
 endfunc
-
 func drawTempIndicator()
     //draw Extruder0
-    gfx_Panel(PANEL_RAISED, 230, 0, 90, 61, 0xD699) ; //Panel Container
-    setFontLabel(268,44);
+    gfx_Panel(PANEL_RAISED, 230, 0, 249, 61, 0xD699) ; //Panel Container
+    setFontLabel(424,44);
     putstr("/");
     updateHotEnd0(str_Ptr(tH0));
     updateTHotEnd0(str_Ptr(ttH0));
 
     //draw Extruder1
-    gfx_Panel(PANEL_RAISED, 230, 60, 90, 61, 0xD699) ; //Panel Container
-    setFontLabel(268,104);
+    gfx_Panel(PANEL_RAISED, 230, 60, 249, 61, 0xD699) ; //Panel Container
+    setFontLabel(424,104);
     putstr("/");
     updateHotEnd1(str_Ptr(tH1));
     updateTHotEnd1(str_Ptr(ttH1));
 
     //draw Bed
-    gfx_Panel(PANEL_RAISED, 230, 120, 90, 61, 0xD699) ; //Panel Container
-    setFontLabel(268,164);
+    gfx_Panel(PANEL_RAISED, 230, 120, 249, 61, 0xD699) ; //Panel Container
+    setFontLabel(424,164);
     putstr("/");
     updateBed(str_Ptr(tB));
     updateTBed(str_Ptr(ttB));
 endfunc
 
 func drawStatusBar()
-    gfx_Panel(PANEL_RAISED, 0, 226, 320, 3, 0xD699); // Info Bar
+img_Show(hndl,iImage3); //SD card Image
+    gfx_Panel(PANEL_RAISED, 0, 252, 480, 3, 0xD699); // Info Bar
     //draw Time Info
-    setFontInfo(4,232);
+    setFontInfo(4,260);
     printBuffer("Time:");
     updateTime(str_Ptr(timePrint));
 
     //draw Z pos Info
-    setFontInfo(113,232);
+    setFontInfo(216,260);
     printBuffer("Z:");
-    setFontInfo(188,232);
+    setFontInfo(288,260);
     printBuffer("mm");
     updateZpos(str_Ptr(zPos));
 
     //draw SDPerc
-    setFontInfo(216,232);
+    setFontInfo(380,260);
     printBuffer("SD:");
-    setFontInfo(272,232);
+    setFontInfo(430,260);
     printBuffer("%");
     updateSDPerc(str_Ptr(sdPerc));
 endfunc
@@ -153,17 +167,18 @@ func setFontMessage(var x,var y)
 endfunc
 
 func updateMessage(var *_msg0,var *_msg1,var *_msg2)
+
     var offset;
     var len;
     len:=(str_Length(_msg0)*7) + (str_Length(_msg1)*7) + (str_Length(_msg2)*7);
-    gfx_RectangleFilled(0, 214, 319, 224,BLACK); //Clear old Message
+    gfx_RectangleFilled(0, 237, 480, 252,BLACK); //Clear old Message
     if(WINDOW==W_SDCARD)
-         gfx_TriangleFilled(299, 228, 288, 212,  310, 212, COLOURSEL_INDICATOR);
+         gfx_TriangleFilled(467, 257, 453, 241,  475, 241, COLOURSEL_INDICATOR);
     else if(WINDOW==W_PRINTING_OPTION)
-         gfx_TriangleFilled(299, 228, 288, 212,  310, 212, COLOURSEL_INDICATOR);
+         gfx_TriangleFilled(467, 257, 453, 241,  475, 241, COLOURSEL_INDICATOR);
     endif
     offset:= ((MESSAGE_DIM*7) - len)/2; //Offset for Center String
-    setFontMessage(offset, 217);
+    setFontMessage(offset, 241);
     printBuffer(_msg0);
     printBuffer(_msg1);
     printBuffer(_msg2);
@@ -183,9 +198,9 @@ func updateHotEnd0(var *_msg)
     var val;
     val := str2w(_msg);
     if(val > _ttH0 && _ttH0 != 0)
-        setFontLabelAlert(240,44);
+        setFontLabelAlert(390,44);
     else
-        setFontLabel(240,44);
+        setFontLabel(390,44);
     endif
     printBuffer(_msg);
     updateImg(iGauge1,tempGauge(val,_ttH0,GAUGE_MAX_TEMP_H));
@@ -195,9 +210,9 @@ func updateHotEnd1(var *_msg)
     var val;
     val := str2w(_msg);
     if(val > _ttH1 && _ttH1 != 0)
-         setFontLabelAlert(240,104);
+         setFontLabelAlert(390,104);
     else
-        setFontLabel(240,104);
+        setFontLabel(390,104);
     endif
     printBuffer(_msg);
     updateImg(iGauge2,tempGauge(val,_ttH1,GAUGE_MAX_TEMP_H));
@@ -210,7 +225,7 @@ func updateTHotEnd0(var *_msg)
     else
         updateLedEx0(ON);
     endif
-    setFontLabel(280,44);
+    setFontLabel(440,44);
     printBuffer(_msg);
 endfunc
 
@@ -221,7 +236,7 @@ func updateTHotEnd1(var *_msg)
     else
         updateLedEx1(ON);
     endif
-    setFontLabel(280,104);
+    setFontLabel(440,104);
     printBuffer(_msg);
 endfunc
 
@@ -230,9 +245,9 @@ func updateBed(var *_msg )
     val := str2w(_msg);
 
     if(val > _ttB && _ttB != 0)
-        setFontLabelAlert(240,164);
+        setFontLabelAlert(390,164);
     else
-        setFontLabel(240,164);
+        setFontLabel(390,164);
     endif
     #IF EXISTS SOUND_BED_NOTIFY
     if(val == _ttB && _ttB!=0) sound(ALERT); //sound when the bed has reached the temperature
@@ -250,17 +265,17 @@ func updateTBed(var *_msg)
         updateLedBed(ON);
     endif
 
-    setFontLabel(280,164);
+    setFontLabel(440,164);
     printBuffer(_msg);
 endfunc
 
 func updateTime(var *_msg)
-    setFontInfo(49,232);
+    setFontInfo(49,260);
     printBuffer(_msg);
 endfunc
 
 func updateSDPerc(var *_msg)
-    setFontInfo(242,232);
+    setFontInfo(404,260);
     printBuffer(_msg);
     if(str2w(_msg)==100)
         PRINTING:=FALSE;
@@ -268,11 +283,12 @@ func updateSDPerc(var *_msg)
 endfunc
 
 func updateZpos(var *_msg)
-    setFontInfo(129,232);
+    setFontInfo(232,260);
     printBuffer(_msg);
 endfunc
 
 func tempGauge(var current_val,var target,var max_temp)
+
     // val : target = x : GAUGE_TTEMP
     var ret;
     if(target!=0)
@@ -308,7 +324,8 @@ func str2w(var *buffer)
 endfunc
 
 func updateButtonExtrude(var state)
-    updateImg(iWinbutton1,state);
+       updateImg(iWinbutton1,state);
+
 endfunc
 
 func updateButtonReverse(var state)
@@ -332,57 +349,54 @@ func updateButtonBedSet(var state)
 endfunc
 
 func updateExmm(var *value,var colour)
-    setFont(63,188,FONT1,colour,0xD699);
+    setFont(96,192,FONT1,colour,0xD699);
     printBuffer(value);
 endfunc
 
 func updateExmm_min(var *value,var colour)
-    setFont(63,202,FONT1,colour,0xD699);
+    setFont(96,220,FONT1,colour,0xD699);
     printBuffer(value);
 endfunc
 
 func updateExSetTemp(var *value,var colour)
-    setFont(175,188,FONT1,colour,0xD699);
+    setFont(280,192,FONT1,colour,0xD699);
     printBuffer(value);
 endfunc
 
 func updateBedSetTemp(var *value,var colour)
-    setFont(175,203,FONT1,colour,0xD699);
+    setFont(280,220,FONT1,colour,0xD699);
     printBuffer(value);
 endfunc
 
 
 func remove_currentTrackpad()
-   if(WINDOW == EXTMM_ACT)
-        gfx_TriangleFilled(71, 183, 60, 172,  82, 172, BLACK);
-    else if(WINDOW == EXTMM_MIN_ACT)
-        gfx_TriangleFilled(71, 198, 60, 172,  82, 172, BLACK);
-    else if(WINDOW == EXTTEMP_ACT)
-        gfx_TriangleFilled(183, 183, 172, 172,  194, 172, BLACK);
-    else if(WINDOW == BEDTEMP_ACT)
-        gfx_TriangleFilled(187, 199, 176, 172,  198, 172, BLACK);
-    endif
 
-    drawAxisMove();
-    drawButtonControl();
-endfunc
+MainGfxInterface();
+drawButtonControl();
+
+
+    endfunc
+
+
+
 
 func initTrackbar(var type)
-     gfx_Panel(PANEL_RAISED, 26, 140, 184, 36, COLOURSEL_INDICATOR); //TrackPad Container
+gfx_Panel(PANEL_RAISED, 84, 140, 250, 36, COLOURSEL_INDICATOR); //TrackPad Container
     if(type == EXTMM_ACT)
-        gfx_TriangleFilled(71, 183, 60, 172,  82, 172, COLOURSEL_INDICATOR);
+        gfx_TriangleFilled(106, 183, 95, 172,  117, 172, COLOURSEL_INDICATOR);
         WINDOW := W_EXTMM;
     else if(type == EXTMM_MIN_ACT)
-        gfx_TriangleFilled(71, 198, 60, 172,  82, 172, COLOURSEL_INDICATOR);
+        gfx_TriangleFilled(106, 211, 95, 172,  117, 172, COLOURSEL_INDICATOR);
         WINDOW := W_EXTMM_MIN;
     else if(type == EXTTEMP_ACT)
-        gfx_TriangleFilled(183, 183, 172, 172,  194, 172, COLOURSEL_INDICATOR);
+        gfx_TriangleFilled(290, 183, 279, 172,  301, 172, COLOURSEL_INDICATOR);
         WINDOW := W_EXTTEMP;
     else if(type == BEDTEMP_ACT)
-        gfx_TriangleFilled(187, 199, 176, 172,  198, 172, COLOURSEL_INDICATOR);
+        gfx_TriangleFilled(290, 211, 279, 172,  301, 172, COLOURSEL_INDICATOR);
         WINDOW := W_BEDTEMP;
-    endif
-endfunc
+        endif
+        endfunc
+
 
 func updateTrackbarStatus(var type)
     var max_value;
@@ -407,18 +421,19 @@ func updateTrackbarStatus(var type)
     img_SetWord(hndl, iTrackbar1, IMAGE_INDEX,map(value,0,max_value,0,100));
     img_Show(hndl, iTrackbar1);
 
+
 endfunc
 
 func updateTrackbarEvent(var type,var x) // x coord.
     var max_value;
     var value,posn;
-    posn := x - 74 ;                        // x - left - borderwidth
+    posn := x - 138 ;                        // x - left - borderwidth
     if (posn < 0)
         posn := 0 ;
-    else if (posn > 114)                    // width - 2*borderwidth - 8
+    else if (posn > 175)                    // width - 2*borderwidth - 8
         posn := 100 ;                       // maxvalue-minvalue
     else
-        posn := 100 * posn / 114 ;    // (max-min) * posn / (width-2*borderwidth-8)
+        posn := 100 * posn / 175 ;    // (max-min) * posn / (width-2*borderwidth-8)
     endif
     if(type == EXTMM_ACT)
         max_value:=TRACKPAD_MAX_EXTMM;
@@ -568,8 +583,8 @@ func updatePageFileIndex()
          file_count:=0;
          sd_page_count:=0;
     endif
-    gfx_RectangleFilled(34, 188, 280, 204, 0xD699);
-    setFont(70,193,FONT1,BLACK,0xD699);
+    gfx_RectangleFilled(106, 205, 180, 220, 0xD699);
+    setFont(142,210,FONT1,BLACK,0xD699);
     putstr("page ");
     putnum(DEC,sd_current_page+1);
     putstr(" of ");
@@ -580,13 +595,14 @@ func updatePageFileIndex()
 endfunc
 
 func drawSDScreen()
-    gfx_RectangleFilled(200, 200, 318, 221,BLACK);
-    gfx_Panel(PANEL_RAISED, 0, 0, 320, 215, COLOURSEL_INDICATOR);
-    gfx_TriangleFilled(299, 228, 288, 212,  310, 212, COLOURSEL_INDICATOR);
-    gfx_Panel(PANEL_RAISED, 4, 4, 312, 207, 0xD699);
+
+    gfx_Panel(PANEL_RAISED, 0, 0, 480, 245, COLOURSEL_INDICATOR);
+    gfx_TriangleFilled(467, 260, 456, 244,  478, 244, COLOURSEL_INDICATOR);
+    gfx_Panel(PANEL_RAISED, 4, 4, 472, 237, 0xD699);
     updateButtonPagesLeft(OFF);
     updateButtonPagesRight(OFF);
     updatePageFileIndex();
+    drawStatusBar();
 endfunc
 
 func updateButtonPagesLeft(var state)
@@ -598,9 +614,13 @@ func updateButtonPagesRight(var state)
 endfunc
 
 func drawWinPrintingOption()
-    gfx_Panel(PANEL_RAISED, 228, 130, 84, 86, COLOURSEL_INDICATOR);
-    gfx_TriangleFilled(299, 228, 288, 212,  310, 212, COLOURSEL_INDICATOR);
-    gfx_Panel(PANEL_RAISED, 232, 134, 76, 78, 0xD699);
+
+drawButtonControl();
+ drawStatusBar();
+ gfx_Panel(PANEL_RAISED, 395, 159, 84, 86, COLOURSEL_INDICATOR);
+    gfx_TriangleFilled(467, 260, 456, 244,  478, 244,
+COLOURSEL_INDICATOR);
+    gfx_Panel(PANEL_RAISED, 399, 163, 76, 78, 0xD699);
     updatePauseButton(OFF);
     updateResumeButton(OFF);
     updateOpenFileButton(OFF);
@@ -625,30 +645,36 @@ endfunc
 func WinPrintConfirm(var index,var *_msg)
     var offset:=0;
     offset:= ((MAX_FILE_NAME*7) - ((str_Length(files[index])+1)*7))/2; //Offset for Center String
-    gfx_Panel(PANEL_RAISED, 88, 68, 132, 69, COLOURSEL_INDICATOR);
-    gfx_Panel(PANEL_RAISED, 91, 72, 126, 61, 0xD699);
+    gfx_Panel(PANEL_RAISED, 173, 68, 132, 69, COLOURSEL_INDICATOR);
+    gfx_Panel(PANEL_RAISED, 176, 72, 126, 61, 0xD699);
     updateImg(iWinbutton11,OFF);
     updateImg(iWinbutton12,OFF);
-    setFont(116,76,FONT1,BLACK,0xD699);
+    setFont(204,76,FONT1,BLACK,0xD699);
     putstr("Print file");
-    setFont(106+offset,88,FONT1,BLACK,0xD699);
+    setFont(189+offset,88,FONT1,BLACK,0xD699);
     str_Printf(&_msg,"%s ?");
 endfunc
 
 func drawWinZCalibration()
+
+ drawButtonControl();
+ drawStatusBar();
     var i;
-    gfx_Panel(PANEL_RAISED, 36, 50, 190, 153, COLOURSEL_INDICATOR);
-    gfx_TriangleFilled(141, 223, 128, 200,  154, 200, COLOURSEL_INDICATOR);
-    gfx_Panel(PANEL_RAISED, 39, 54, 183, 147, 0xD699);
+    gfx_Panel(PANEL_RAISED, 84, 53, 190, 192, COLOURSEL_INDICATOR);
+    gfx_TriangleFilled(253, 260, 240, 244,  266, 244, COLOURSEL_INDICATOR);
+    gfx_Panel(PANEL_RAISED, 87, 56, 184, 186, 0xD699);
     for(i:=0; i<11; i++)
          updateButtonZCal(i,OFF);
+
+
     next
-    setFont(137,92,FONT1,BLACK,0xD699);
+    setFont(169,108,FONT1,BLACK,0xD699);
     txt_Height(2);
     txt_Width(1);
     putstr(",");
     Font1x1();
-endfunc
+    endfunc
+
 
 func setFontZCal(var x , var y)
     setFont(x,y,FONT1,BLACK,SILVER);
@@ -661,6 +687,7 @@ func Font1x1()
     txt_Width(1);
 endfunc
 
+
 func updateButtonZCal(var type,var state)
 
     //setOffset
@@ -671,9 +698,9 @@ func updateButtonZCal(var type,var state)
         updateImg(iWinbutton18,state);
     //Sign
     else if(type==Z_SIGN)
-        gfx_Panel(PANEL_RAISED, 82, 80, 22, 30, SILVER) ;
+
         updateImg(iWinbutton30,state);
-        setFontZCal(87,87);
+        setFontZCal(134,96);
         if(z_cal_sign>0)
             putstr("+");
         else
@@ -682,62 +709,56 @@ func updateButtonZCal(var type,var state)
         Font1x1();
     //Int+
     else if(type==Z_INT_PLUS)
-        gfx_Panel(PANEL_RAISED, 110, 80, 22, 30, SILVER) ;
         updateImg(iWinbutton19,state);
-        setFontZCal(115,87);
+        setFontZCal(148,96);
         putnum(DEC,z_cal_int);
         Font1x1();
     //Int-
     else if(type==Z_INT_MINUS)
-        gfx_Panel(PANEL_RAISED, 110, 80, 22, 30, SILVER);
         updateImg(iWinbutton26,state);
-        setFontZCal(115,87);
+        setFontZCal(146,96);
         putnum(DEC,z_cal_int);
         Font1x1();
     //Dec1+
     else if(type==Z_DEC1_PLUS)
-        gfx_Panel(PANEL_RAISED, 146, 80, 22, 30, SILVER) ;
         updateImg(iWinbutton20,state);
-        setFontZCal(151,87);
+        setFontZCal(184,96);
         putnum(DEC,z_cal_dec1);
         Font1x1();
     //Dec1-
     else if(type==Z_DEC1_MINUS)
-        gfx_Panel(PANEL_RAISED, 146, 80, 22, 30, SILVER) ;
         updateImg(iWinbutton27,state);
-        setFontZCal(151,87);
+        setFontZCal(184,96);
         putnum(DEC,z_cal_dec1);
         Font1x1();
     //Dec2+
     else if(type==Z_DEC2_PLUS)
-        gfx_Panel(PANEL_RAISED, 170, 80, 22, 30, SILVER);
         updateImg(iWinbutton22,state);
-        setFontZCal(175,87);
+        setFontZCal(214,96);
         putnum(DEC,z_cal_dec2);
         Font1x1();
     //Dec2-
     else if(type==Z_DEC2_MINUS)
-        gfx_Panel(PANEL_RAISED, 170, 80, 22, 30, SILVER);
         updateImg(iWinbutton28,state);
-        setFontZCal(175,87);
+        setFontZCal(214,96);
         putnum(DEC,z_cal_dec2);
         Font1x1();
     //Dec3+
     else if(type==Z_DEC3_PLUS)
-        gfx_Panel(PANEL_RAISED, 194, 80, 22, 30, SILVER) ;
         updateImg(iWinbutton23,state);
-        setFontZCal(199,87);
+        setFontZCal(244,96);
         putnum(DEC,z_cal_dec3);
         Font1x1();
     //Dec3-
     else if(type==Z_DEC3_MINUS)
-        gfx_Panel(PANEL_RAISED, 194, 80, 22, 30, SILVER) ;
         updateImg(iWinbutton29,state);
-        setFontZCal(199,87);
+        setFontZCal(244,96);
         putnum(DEC,z_cal_dec3);
         Font1x1();
-    endif
-endfunc
+      endif
+    endfunc
+
+
 
 func EnableAllTocuhButtonImage()
     img_SetWord(hndl, iWinbutton1, IMAGE_FLAGS, (img_GetWord(hndl, iWinbutton1, IMAGE_FLAGS) | I_STAYONTOP) & ~I_TOUCH_DISABLE);
@@ -772,14 +793,17 @@ func EnableAllTocuhButtonImage()
     img_SetWord(hndl, iWinbutton18, IMAGE_FLAGS, (img_GetWord(hndl, iWinbutton18, IMAGE_FLAGS) | I_STAYONTOP) & ~I_TOUCH_DISABLE);
     */
 
+
 endfunc
 
 func updateImg(var img,var state)
     img_SetWord(hndl,img,IMAGE_INDEX,state);
     img_Show(hndl,img);
-endfunc
+    endfunc
 
 func switchWinSDtoMain()
+
+drawButtonControl();
     if(FILE_START==TRUE)
         mem_Free(filenames); // Free!!! :)
         FILE_START:=FALSE;
@@ -790,7 +814,9 @@ func switchWinSDtoMain()
     sd_current_page:=0;
     file_count:=0;
     WINDOW:=W_MAIN;
-    gfx_RectangleFilled(0, 167, 319, 229,BLACK);
-    drawGfxInterface();
+  drawAxisMove();
+
+
 endfunc
+
 

@@ -1,4 +1,4 @@
-#platform "uLCD-32PT"
+#platform "uLCD-43PT"
 #MODE RUNFLASH
 #STACK 500
 
@@ -57,19 +57,20 @@ func startupSD()
 endfunc
 
 func bootSplash()
+gfx_RectangleFilled(0, 0, 480, 500, WHITE);
     img_Show(hndl,iImage4);
-    txt_FGcolour(WHITE);
-    txt_BGcolour(BLACK);
-    gfx_MoveTo(124, 180);
-    putstr("3D Printer");
-    txt_FGcolour(WHITE);
-    txt_BGcolour(BLACK);
-    gfx_MoveTo(100, 220);
+txt_FGcolour(BLACK);
+    txt_BGcolour(WHITE);
+    gfx_MoveTo(216, 196);
+    putstr("FDM-Tec");
+    txt_FGcolour(BLACK);
+    txt_BGcolour(WHITE);
+    gfx_MoveTo(176, 220);
     putstr("LCD Interface v.");
     putstr(VERSION);
-    gfx_MoveTo(84, 232);
+    gfx_MoveTo(200, 240);
     putstr(AUTHOR);
-endfunc
+    endfunc
 
 var BLOCK:=TRUE;
 func BlockStartupEvent()

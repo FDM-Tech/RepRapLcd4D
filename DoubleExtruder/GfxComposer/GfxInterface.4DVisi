@@ -1,11 +1,11 @@
 ﻿Version     0.0
-Platform    uLCD-32PT-L
-PlatImage   'Basic uLCD-32PT'
+Platform    uLCD-43PT-L
+PlatRes     272x480
 Depends
 end
 Options
     Visualizer
-    Speed                        -1
+    Speed                        0
     Checksum                     No
     ResponseSize                 0
     Multidrop                    No
@@ -70,7 +70,7 @@ Panel
     Pattern                      Fine
     State                        Raised
     Top                          0
-    Width                        90
+    Width                        249
 end
 Gauge
     Name                         Gauge1
@@ -114,7 +114,7 @@ Gauge
     Timer                        (None)
     Top                          20
     Visible                      Yes
-    Width                        82
+    Width                        245
     OnChanged                    ''
     OnTouchMoving                ''
     OnTouchPressed               ''
@@ -131,9 +131,9 @@ Label
     4DGLFont.MagHeight           1
     4DGLFont.Opaque              Yes
     BGcolor                      'Office 2003 Classic'
-    Caption                      00
+    Caption                      000
     FGcolor                      BLUE
-    Left                         245
+    Left                         390
     Top                          44
 end
 Label
@@ -149,7 +149,7 @@ Label
     BGcolor                      'Office 2003 Classic'
     Caption                      000
     FGcolor                      BLUE
-    Left                         280
+    Left                         440
     Top                          44
 end
 Label
@@ -165,7 +165,7 @@ Label
     BGcolor                      'Office 2003 Classic'
     Caption                      /
     FGcolor                      BLUE
-    Left                         268
+    Left                         424
     Top                          44
 end
 Gauge
@@ -210,7 +210,7 @@ Gauge
     Timer                        (None)
     Top                          80
     Visible                      Yes
-    Width                        82
+    Width                        245
     OnChanged                    ''
     OnTouchMoving                ''
     OnTouchPressed               ''
@@ -229,7 +229,7 @@ Label
     BGcolor                      'Office 2003 Classic'
     Caption                      000
     FGcolor                      BLUE
-    Left                         240
+    Left                         390
     Top                          104
 end
 Label
@@ -245,7 +245,7 @@ Label
     BGcolor                      'Office 2003 Classic'
     Caption                      /
     FGcolor                      BLUE
-    Left                         268
+    Left                         424
     Top                          104
 end
 Label
@@ -261,7 +261,7 @@ Label
     BGcolor                      'Office 2003 Classic'
     Caption                      000
     FGcolor                      BLUE
-    Left                         280
+    Left                         440
     Top                          104
 end
 Panel
@@ -274,7 +274,7 @@ Panel
     Pattern                      Fine
     State                        Raised
     Top                          60
-    Width                        90
+    Width                        249
 end
 Panel
     Name                         Panel4
@@ -286,7 +286,7 @@ Panel
     Pattern                      Fine
     State                        Raised
     Top                          120
-    Width                        90
+    Width                        249
 end
 Gauge
     Name                         Gauge3
@@ -330,7 +330,7 @@ Gauge
     Timer                        (None)
     Top                          140
     Visible                      Yes
-    Width                        82
+    Width                        245
     OnChanged                    ''
     OnTouchMoving                ''
     OnTouchPressed               ''
@@ -349,7 +349,7 @@ Label
     BGcolor                      'Office 2003 Classic'
     Caption                      000
     FGcolor                      BLUE
-    Left                         240
+    Left                         390
     Top                          164
 end
 Label
@@ -365,7 +365,7 @@ Label
     BGcolor                      'Office 2003 Classic'
     Caption                      /
     FGcolor                      BLUE
-    Left                         268
+    Left                         424
     Top                          164
 end
 Label
@@ -381,7 +381,7 @@ Label
     BGcolor                      'Office 2003 Classic'
     Caption                      000
     FGcolor                      BLUE
-    Left                         280
+    Left                         440
     Top                          164
 end
 Label
@@ -395,10 +395,10 @@ Label
     4DGLFont.MagHeight           1
     4DGLFont.Opaque              Yes
     BGcolor                      BLACK
-    Caption                      Time:
+    Caption                      Zeit:
     FGcolor                      WHITE
     Left                         4
-    Top                          232
+    Top                          260
 end
 Label
     Name                         Label14
@@ -414,7 +414,7 @@ Label
     Caption                      00h00m
     FGcolor                      WHITE
     Left                         49
-    Top                          232
+    Top                          260
 end
 Label
     Name                         Label15
@@ -429,8 +429,8 @@ Label
     BGcolor                      BLACK
     Caption                      Z:
     FGcolor                      WHITE
-    Left                         113
-    Top                          232
+    Left                         216
+    Top                          260
 end
 Label
     Name                         Label16
@@ -445,8 +445,8 @@ Label
     BGcolor                      BLACK
     Caption                      +000.51
     FGcolor                      WHITE
-    Left                         129
-    Top                          232
+    Left                         232
+    Top                          260
 end
 Label
     Name                         Label17
@@ -461,8 +461,8 @@ Label
     BGcolor                      BLACK
     Caption                      cm
     FGcolor                      WHITE
-    Left                         188
-    Top                          232
+    Left                         288
+    Top                          260
 end
 Label
     Name                         Label18
@@ -477,8 +477,8 @@ Label
     BGcolor                      BLACK
     Caption                      SD:
     FGcolor                      WHITE
-    Left                         216
-    Top                          232
+    Left                         380
+    Top                          260
 end
 Label
     Name                         Label19
@@ -493,8 +493,8 @@ Label
     BGcolor                      BLACK
     Caption                      000
     FGcolor                      WHITE
-    Left                         242
-    Top                          232
+    Left                         404
+    Top                          260
 end
 Label
     Name                         Label20
@@ -509,8 +509,8 @@ Label
     BGcolor                      BLACK
     Caption                      %
     FGcolor                      WHITE
-    Left                         272
-    Top                          232
+    Left                         430
+    Top                          260
 end
 Panel
     Name                         Panel1
@@ -521,8 +521,8 @@ Panel
     OutlineColor                 WHITE
     Pattern                      Fine
     State                        Raised
-    Top                          226
-    Width                        320
+    Top                          252
+    Width                        480
 end
 Panel
     Name                         Panel5
@@ -564,25 +564,25 @@ Panel
     Name                         Panel8
     Color                        'Office 2003 Classic'
     Height                       180
-    Left                         227
+    Left                         228
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
     State                        Raised
-    Top                          2
+    Top                          0
     Width                        3
 end
 Image
     Name                         Image3
     Height                       10
     Image                        sd.jpg
-    Left                         292
+    Left                         460
     Source.Height                20
     Source.Left                  0
     Source.Top                   0
     Source.Width                 30
     Visible                      Yes
-    Top                          230
+    Top                          259
     Width                        15
     OnTouchMoving                ''
     OnTouchPressed               ''
@@ -605,8 +605,8 @@ WinButton
     Font.Name                    Tahoma
     Font.Size                    8
     Font.Style                   []
-    Height                       14
-    Left                         4
+    Height                       25
+    Left                         6
     Matrix                       -1
     Momentary                    Yes
     Picture                      (None)
@@ -628,9 +628,9 @@ WinButton
     StatusWhenOn.Size            8
     StatusWhenOn.Style           []
     StatusWhenOn.Visible         Yes
-    Top                          183
+    Top                          184
     Visible                      Yes
-    Width                        51
+    Width                        60
     OnChanged                    ''
     OnTouchMoving                ''
     OnTouchPressed               ''
@@ -653,8 +653,8 @@ WinButton
     Font.Name                    Tahoma
     Font.Size                    8
     Font.Style                   []
-    Height                       14
-    Left                         4
+    Height                       25
+    Left                         6
     Matrix                       -1
     Momentary                    Yes
     Picture                      (None)
@@ -676,9 +676,9 @@ WinButton
     StatusWhenOn.Size            8
     StatusWhenOn.Style           []
     StatusWhenOn.Visible         Yes
-    Top                          199
+    Top                          212
     Visible                      Yes
-    Width                        51
+    Width                        60
     OnChanged                    ''
     OnTouchMoving                ''
     OnTouchPressed               ''
@@ -698,31 +698,31 @@ Label
     Caption                      'Stringa Lunga di Messaggio / Errore e visualizzazione'
     FGcolor                      WHITE
     Left                         0
-    Top                          217
+    Top                          241
 end
 Panel
     Name                         Panel9
     Color                        'Office 2003 Classic'
-    Height                       14
-    Left                         60
+    Height                       25
+    Left                         86
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
     State                        Raised
     Top                          184
-    Width                        27
+    Width                        40
 end
 Panel
     Name                         Panel10
     Color                        'Office 2003 Classic'
-    Height                       14
-    Left                         60
+    Height                       25
+    Left                         86
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
     State                        Raised
-    Top                          199
-    Width                        27
+    Top                          212
+    Width                        40
 end
 Label
     Name                         Label22
@@ -737,8 +737,8 @@ Label
     BGcolor                      BLACK
     Caption                      mm
     FGcolor                      WHITE
-    Left                         92
-    Top                          188
+    Left                         132
+    Top                          192
 end
 Label
     Name                         Label23
@@ -753,8 +753,8 @@ Label
     BGcolor                      BLACK
     Caption                      mm/min
     FGcolor                      WHITE
-    Left                         92
-    Top                          204
+    Left                         132
+    Top                          220
 end
 WinButton
     Name                         Winbutton3
@@ -773,8 +773,8 @@ WinButton
     Font.Name                    Tahoma
     Font.Size                    8
     Font.Style                   []
-    Height                       14
-    Left                         140
+    Height                       25
+    Left                         192
     Matrix                       -1
     Momentary                    Yes
     Picture                      (None)
@@ -787,7 +787,7 @@ WinButton
     StatusWhenOff.Size           8
     StatusWhenOff.Style          []
     StatusWhenOff.Visible        Yes
-    StatusWhenOn.BGcolor         RED
+    StatusWhenOn.BGcolor         LIME
     StatusWhenOn.Caption         ''
     StatusWhenOn.Glow            Yes
     StatusWhenOn.Color           WHITE
@@ -796,9 +796,9 @@ WinButton
     StatusWhenOn.Size            8
     StatusWhenOn.Style           []
     StatusWhenOn.Visible         Yes
-    Top                          183
+    Top                          184
     Visible                      Yes
-    Width                        28
+    Width                        60
     OnChanged                    ''
     OnTouchMoving                ''
     OnTouchPressed               ''
@@ -821,8 +821,8 @@ WinButton
     Font.Name                    Tahoma
     Font.Size                    8
     Font.Style                   []
-    Height                       14
-    Left                         140
+    Height                       25
+    Left                         192
     Matrix                       -1
     Momentary                    Yes
     Picture                      (None)
@@ -835,7 +835,7 @@ WinButton
     StatusWhenOff.Size           8
     StatusWhenOff.Style          []
     StatusWhenOff.Visible        Yes
-    StatusWhenOn.BGcolor         RED
+    StatusWhenOn.BGcolor         LIME
     StatusWhenOn.Caption         ''
     StatusWhenOn.Glow            Yes
     StatusWhenOn.Color           WHITE
@@ -844,9 +844,9 @@ WinButton
     StatusWhenOn.Size            8
     StatusWhenOn.Style           []
     StatusWhenOn.Visible         Yes
-    Top                          199
+    Top                          212
     Visible                      Yes
-    Width                        28
+    Width                        60
     OnChanged                    ''
     OnTouchMoving                ''
     OnTouchPressed               ''
@@ -855,14 +855,14 @@ end
 Panel
     Name                         Panel11
     Color                        'Office 2003 Classic'
-    Height                       14
-    Left                         172
+    Height                       25
+    Left                         270
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
     State                        Raised
     Top                          184
-    Width                        27
+    Width                        40
 end
 Label
     Name                         Label24
@@ -877,8 +877,8 @@ Label
     BGcolor                      'Office 2003 Classic'
     Caption                      200
     FGcolor                      0x010101
-    Left                         63
-    Top                          188
+    Left                         96
+    Top                          192
 end
 Label
     Name                         Label25
@@ -893,20 +893,20 @@ Label
     BGcolor                      'Office 2003 Classic'
     Caption                      200
     FGcolor                      0x010101
-    Left                         63
-    Top                          202
+    Left                         96
+    Top                          220
 end
 Panel
     Name                         Panel12
     Color                        'Office 2003 Classic'
-    Height                       14
-    Left                         172
+    Height                       25
+    Left                         270
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
     State                        Raised
-    Top                          199
-    Width                        27
+    Top                          212
+    Width                        40
 end
 WinButton
     Name                         Winbutton5
@@ -925,8 +925,8 @@ WinButton
     Font.Name                    Tahoma
     Font.Size                    8
     Font.Style                   []
-    Height                       14
-    Left                         212
+    Height                       25
+    Left                         340
     Matrix                       -1
     Momentary                    Yes
     Picture                      (None)
@@ -948,9 +948,9 @@ WinButton
     StatusWhenOn.Size            8
     StatusWhenOn.Style           []
     StatusWhenOn.Visible         Yes
-    Top                          183
+    Top                          184
     Visible                      Yes
-    Width                        50
+    Width                        60
     OnChanged                    ''
     OnTouchMoving                ''
     OnTouchPressed               ''
@@ -973,8 +973,8 @@ WinButton
     Font.Name                    Tahoma
     Font.Size                    8
     Font.Style                   []
-    Height                       14
-    Left                         212
+    Height                       25
+    Left                         340
     Matrix                       -1
     Momentary                    Yes
     Picture                      (None)
@@ -996,9 +996,9 @@ WinButton
     StatusWhenOn.Size            8
     StatusWhenOn.Style           []
     StatusWhenOn.Visible         Yes
-    Top                          199
+    Top                          212
     Visible                      Yes
-    Width                        50
+    Width                        60
     OnChanged                    ''
     OnTouchMoving                ''
     OnTouchPressed               ''
@@ -1017,7 +1017,7 @@ Led
     Height                       12
     Layout                       Left
     LedType                      Rounded
-    Left                         236
+    Left                         400
     Palette.High                 RED
     Palette.Low                  LIME
     Spacing                      5
@@ -1039,7 +1039,7 @@ Led
     Height                       14
     Layout                       Left
     LedType                      Rounded
-    Left                         243
+    Left                         406
     Palette.High                 RED
     Palette.Low                  LIME
     Spacing                      -2
@@ -1061,7 +1061,7 @@ Led
     Height                       12
     Layout                       Left
     LedType                      Rounded
-    Left                         236
+    Left                         400
     Palette.High                 RED
     Palette.Low                  LIME
     Spacing                      5
@@ -1083,8 +1083,8 @@ Label
     BGcolor                      'Office 2003 Classic'
     Caption                      200
     FGcolor                      0x010101
-    Left                         175
-    Top                          188
+    Left                         280
+    Top                          192
 end
 Label
     Name                         Label5
@@ -1099,8 +1099,8 @@ Label
     BGcolor                      'Office 2003 Classic'
     Caption                      200
     FGcolor                      0x010101
-    Left                         175
-    Top                          203
+    Left                         280
+    Top                          220
 end
 Label
     Name                         Label9
@@ -1131,8 +1131,8 @@ Label
     BGcolor                      BLACK
     Caption                      C
     FGcolor                      WHITE
-    Left                         202
-    Top                          188
+    Left                         316
+    Top                          192
 end
 Label
     Name                         Label27
@@ -1147,8 +1147,8 @@ Label
     BGcolor                      BLACK
     Caption                      C
     FGcolor                      WHITE
-    Left                         202
-    Top                          204
+    Left                         316
+    Top                          220
 end
 Trackbar
     Name                         Trackbar1
@@ -1175,16 +1175,16 @@ Trackbar
     GutterColor                  BLACK
     GutterWidth                  9
     Height                       26
-    Left                         60
+    Left                         128
     Maxvalue                     100
     Minvalue                     0
     Orientation                  Horizontal
     ScaleOffset                  5
     TickColor                    BLACK
     TickMarks                    Both
-    Top                          144
+    Top                          145
     Visible                      Yes
-    Width                        142
+    Width                        203
     OnChanged                    ''
     OnChanging                   ''
 end
@@ -1192,13 +1192,13 @@ Panel
     Name                         Panel13
     Color                        'Office 2003 (Blue)'
     Height                       36
-    Left                         28
+    Left                         86
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
     State                        Raised
     Top                          140
-    Width                        184
+    Width                        250
 end
 Triangle
     Name                         Triangle1
@@ -1207,9 +1207,9 @@ Triangle
     Outlined                     No
     OutlineColor                 'Office 2010 (Blue)'
     Pattern                      Solid
-    X1                           183
-    X2                           172
-    X3                           194
+    X1                           291
+    X2                           280
+    X3                           302
     Y1                           183
     Y2                           172
     Y3                           172
@@ -1231,8 +1231,8 @@ WinButton
     Font.Name                    Tahoma
     Font.Size                    8
     Font.Style                   []
-    Height                       34
-    Left                         264
+    Height                       55
+    Left                         416
     Matrix                       -1
     Momentary                    Yes
     Picture                      (None)
@@ -1254,9 +1254,9 @@ WinButton
     StatusWhenOn.Size            8
     StatusWhenOn.Style           []
     StatusWhenOn.Visible         Yes
-    Top                          182
+    Top                          187
     Visible                      Yes
-    Width                        50
+    Width                        55
     OnChanged                    ''
     OnTouchMoving                ''
     OnTouchPressed               ''
@@ -1296,7 +1296,7 @@ WinButton
     Font.Size                    8
     Font.Style                   []
     Height                       15
-    Left                         30
+    Left                         92
     Matrix                       -1
     Momentary                    Yes
     Picture                      (None)
@@ -1318,7 +1318,7 @@ WinButton
     StatusWhenOn.Size            8
     StatusWhenOn.Style           []
     StatusWhenOn.Visible         Yes
-    Top                          142
+    Top                          143
     Visible                      Yes
     Width                        25
     OnChanged                    ''
@@ -1344,7 +1344,7 @@ WinButton
     Font.Size                    8
     Font.Style                   []
     Height                       15
-    Left                         30
+    Left                         92
     Matrix                       -1
     Momentary                    Yes
     Picture                      (None)
@@ -1366,7 +1366,7 @@ WinButton
     StatusWhenOn.Size            8
     StatusWhenOn.Style           []
     StatusWhenOn.Visible         Yes
-    Top                          158
+    Top                          159
     Visible                      Yes
     Width                        25
     OnChanged                    ''
@@ -1407,8 +1407,8 @@ WinButton
     Font.Name                    Tahoma
     Font.Size                    8
     Font.Style                   []
-    Height                       34
-    Left                         264
+    Height                       55
+    Left                         416
     Matrix                       -1
     Momentary                    Yes
     Picture                      (None)
@@ -1430,9 +1430,9 @@ WinButton
     StatusWhenOn.Size            8
     StatusWhenOn.Style           []
     StatusWhenOn.Visible         Yes
-    Top                          182
+    Top                          187
     Visible                      Yes
-    Width                        50
+    Width                        55
     OnChanged                    ''
     OnTouchMoving                ''
     OnTouchPressed               ''
@@ -1457,14 +1457,14 @@ end
 Panel
     Name                         Panel14
     Color                        'Office 2010 (Blue)'
-    Height                       215
+    Height                       245
     Left                         0
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
     State                        Raised
     Top                          0
-    Width                        320
+    Width                        480
 end
 Triangle
     Name                         Triangle2
@@ -1473,24 +1473,24 @@ Triangle
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Solid
-    X1                           299
-    X2                           288
-    X3                           310
-    Y1                           228
-    Y2                           212
-    Y3                           212
+    X1                           467
+    X2                           456
+    X3                           478
+    Y1                           260
+    Y2                           244
+    Y3                           244
 end
 Panel
     Name                         Panel15
     Color                        'Office 2003 Classic'
-    Height                       207
+    Height                       237
     Left                         4
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
     State                        Raised
     Top                          4
-    Width                        312
+    Width                        472
 end
 Button
     Name                         Button4
@@ -1499,7 +1499,7 @@ Button
     Color                        BLACK
     Font                         FONT1
     Index                        0
-    Left                         10
+    Left                         50
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
@@ -1508,7 +1508,7 @@ Button
     SelTextColor                 BLUE
     TextHeight                   1
     TextWidth                    1
-    Top                          32
+    Top                          42
     Value                        50
 end
 Button
@@ -1518,7 +1518,7 @@ Button
     Color                        BLACK
     Font                         FONT1
     Index                        0
-    Left                         112
+    Left                         192
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
@@ -1527,7 +1527,7 @@ Button
     SelTextColor                 BLUE
     TextHeight                   1
     TextWidth                    1
-    Top                          32
+    Top                          42
     Value                        50
 end
 Button
@@ -1537,7 +1537,7 @@ Button
     Color                        BLACK
     Font                         FONT1
     Index                        0
-    Left                         214
+    Left                         333
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
@@ -1546,7 +1546,7 @@ Button
     SelTextColor                 BLUE
     TextHeight                   1
     TextWidth                    1
-    Top                          32
+    Top                          42
     Value                        50
 end
 Button
@@ -1556,7 +1556,7 @@ Button
     Color                        BLACK
     Font                         FONT1
     Index                        0
-    Left                         10
+    Left                         50
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
@@ -1565,7 +1565,7 @@ Button
     SelTextColor                 BLUE
     TextHeight                   1
     TextWidth                    1
-    Top                          54
+    Top                          64
     Value                        50
 end
 Button
@@ -1575,7 +1575,7 @@ Button
     Color                        BLACK
     Font                         FONT1
     Index                        0
-    Left                         112
+    Left                         192
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
@@ -1584,7 +1584,7 @@ Button
     SelTextColor                 BLUE
     TextHeight                   1
     TextWidth                    1
-    Top                          54
+    Top                          64
     Value                        50
 end
 Button
@@ -1594,7 +1594,7 @@ Button
     Color                        BLACK
     Font                         FONT1
     Index                        0
-    Left                         214
+    Left                         333
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
@@ -1603,7 +1603,7 @@ Button
     SelTextColor                 BLUE
     TextHeight                   1
     TextWidth                    1
-    Top                          54
+    Top                          64
     Value                        50
 end
 Button
@@ -1613,7 +1613,7 @@ Button
     Color                        BLACK
     Font                         FONT1
     Index                        0
-    Left                         10
+    Left                         50
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
@@ -1622,7 +1622,7 @@ Button
     SelTextColor                 BLUE
     TextHeight                   1
     TextWidth                    1
-    Top                          76
+    Top                          86
     Value                        50
 end
 Button
@@ -1632,7 +1632,7 @@ Button
     Color                        BLACK
     Font                         FONT1
     Index                        0
-    Left                         112
+    Left                         192
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
@@ -1641,7 +1641,7 @@ Button
     SelTextColor                 BLUE
     TextHeight                   1
     TextWidth                    1
-    Top                          76
+    Top                          86
     Value                        50
 end
 Button
@@ -1651,7 +1651,7 @@ Button
     Color                        BLACK
     Font                         FONT1
     Index                        0
-    Left                         214
+    Left                         333
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
@@ -1660,7 +1660,7 @@ Button
     SelTextColor                 BLUE
     TextHeight                   1
     TextWidth                    1
-    Top                          76
+    Top                          86
     Value                        50
 end
 Button
@@ -1670,7 +1670,7 @@ Button
     Color                        BLACK
     Font                         FONT1
     Index                        0
-    Left                         112
+    Left                         192
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
@@ -1679,7 +1679,7 @@ Button
     SelTextColor                 BLUE
     TextHeight                   1
     TextWidth                    1
-    Top                          98
+    Top                          108
     Value                        50
 end
 Button
@@ -1689,7 +1689,7 @@ Button
     Color                        BLACK
     Font                         FONT1
     Index                        0
-    Left                         10
+    Left                         50
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
@@ -1698,7 +1698,7 @@ Button
     SelTextColor                 BLUE
     TextHeight                   1
     TextWidth                    1
-    Top                          98
+    Top                          108
     Value                        50
 end
 Button
@@ -1708,7 +1708,7 @@ Button
     Color                        BLACK
     Font                         FONT1
     Index                        0
-    Left                         10
+    Left                         50
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
@@ -1717,7 +1717,7 @@ Button
     SelTextColor                 BLUE
     TextHeight                   1
     TextWidth                    1
-    Top                          120
+    Top                          130
     Value                        50
 end
 Button
@@ -1727,7 +1727,7 @@ Button
     Color                        BLACK
     Font                         FONT1
     Index                        0
-    Left                         10
+    Left                         50
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
@@ -1736,7 +1736,7 @@ Button
     SelTextColor                 BLUE
     TextHeight                   1
     TextWidth                    1
-    Top                          142
+    Top                          152
     Value                        50
 end
 Button
@@ -1746,7 +1746,7 @@ Button
     Color                        BLACK
     Font                         FONT1
     Index                        0
-    Left                         10
+    Left                         50
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
@@ -1755,7 +1755,7 @@ Button
     SelTextColor                 BLUE
     TextHeight                   1
     TextWidth                    1
-    Top                          164
+    Top                          174
     Value                        50
 end
 Button
@@ -1765,7 +1765,7 @@ Button
     Color                        BLACK
     Font                         FONT1
     Index                        0
-    Left                         112
+    Left                         192
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
@@ -1774,7 +1774,7 @@ Button
     SelTextColor                 BLUE
     TextHeight                   1
     TextWidth                    1
-    Top                          120
+    Top                          130
     Value                        50
 end
 Button
@@ -1784,7 +1784,7 @@ Button
     Color                        BLACK
     Font                         FONT1
     Index                        0
-    Left                         112
+    Left                         192
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
@@ -1793,7 +1793,7 @@ Button
     SelTextColor                 BLUE
     TextHeight                   1
     TextWidth                    1
-    Top                          142
+    Top                          152
     Value                        50
 end
 Button
@@ -1803,7 +1803,7 @@ Button
     Color                        BLACK
     Font                         FONT1
     Index                        0
-    Left                         112
+    Left                         192
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
@@ -1812,7 +1812,7 @@ Button
     SelTextColor                 BLUE
     TextHeight                   1
     TextWidth                    1
-    Top                          164
+    Top                          174
     Value                        50
 end
 Button
@@ -1822,7 +1822,7 @@ Button
     Color                        BLACK
     Font                         FONT1
     Index                        0
-    Left                         214
+    Left                         333
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
@@ -1831,7 +1831,7 @@ Button
     SelTextColor                 BLUE
     TextHeight                   1
     TextWidth                    1
-    Top                          98
+    Top                          108
     Value                        50
 end
 Button
@@ -1841,7 +1841,7 @@ Button
     Color                        BLACK
     Font                         FONT1
     Index                        0
-    Left                         214
+    Left                         333
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
@@ -1850,7 +1850,7 @@ Button
     SelTextColor                 BLUE
     TextHeight                   1
     TextWidth                    1
-    Top                          120
+    Top                          130
     Value                        50
 end
 Button
@@ -1860,7 +1860,7 @@ Button
     Color                        BLACK
     Font                         FONT1
     Index                        0
-    Left                         214
+    Left                         333
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
@@ -1869,7 +1869,7 @@ Button
     SelTextColor                 BLUE
     TextHeight                   1
     TextWidth                    1
-    Top                          142
+    Top                          152
     Value                        50
 end
 Button
@@ -1879,7 +1879,7 @@ Button
     Color                        BLACK
     Font                         FONT1
     Index                        0
-    Left                         214
+    Left                         333
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
@@ -1888,7 +1888,7 @@ Button
     SelTextColor                 BLUE
     TextHeight                   1
     TextWidth                    1
-    Top                          164
+    Top                          174
     Value                        50
 end
 Button
@@ -1898,7 +1898,7 @@ Button
     Color                        BLACK
     Font                         FONT1
     Index                        0
-    Left                         10
+    Left                         50
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
@@ -1907,7 +1907,7 @@ Button
     SelTextColor                 BLUE
     TextHeight                   1
     TextWidth                    1
-    Top                          10
+    Top                          20
     Value                        50
 end
 Button
@@ -1917,7 +1917,7 @@ Button
     Color                        BLACK
     Font                         FONT1
     Index                        0
-    Left                         112
+    Left                         192
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
@@ -1926,7 +1926,7 @@ Button
     SelTextColor                 BLUE
     TextHeight                   1
     TextWidth                    1
-    Top                          10
+    Top                          20
     Value                        50
 end
 Button
@@ -1936,7 +1936,7 @@ Button
     Color                        BLACK
     Font                         FONT1
     Index                        0
-    Left                         214
+    Left                         333
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
@@ -1945,7 +1945,7 @@ Button
     SelTextColor                 BLUE
     TextHeight                   1
     TextWidth                    1
-    Top                          10
+    Top                          20
     Value                        50
 end
 Label
@@ -1961,8 +1961,8 @@ Label
     BGcolor                      'Office 2003 Classic'
     Caption                      'page 200 of 300 (1000files)'
     FGcolor                      BLACK
-    Left                         70
-    Top                          193
+    Left                         142
+    Top                          210
 end
 Form
     Name                         ButtonSDCardPage
@@ -2020,7 +2020,7 @@ WinButton
     StatusWhenOn.Size            8
     StatusWhenOn.Style           []
     StatusWhenOn.Visible         Yes
-    Top                          188
+    Top                          220
     Visible                      Yes
     Width                        27
     OnChanged                    ''
@@ -2046,7 +2046,7 @@ WinButton
     Font.Size                    8
     Font.Style                   []
     Height                       17
-    Left                         284
+    Left                         445
     Matrix                       -1
     Momentary                    Yes
     Picture                      (None)
@@ -2068,7 +2068,7 @@ WinButton
     StatusWhenOn.Size            8
     StatusWhenOn.Style           []
     StatusWhenOn.Visible         Yes
-    Top                          188
+    Top                          220
     Visible                      Yes
     Width                        27
     OnChanged                    ''
@@ -2096,7 +2096,7 @@ Panel
     Name                         Panel16
     Color                        'Office 2003 (Blue)'
     Height                       69
-    Left                         88
+    Left                         173
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
@@ -2108,7 +2108,7 @@ Panel
     Name                         Panel17
     Color                        'Office 2003 Classic'
     Height                       61
-    Left                         91
+    Left                         176
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
@@ -2134,7 +2134,7 @@ WinButton
     Font.Size                    8
     Font.Style                   []
     Height                       24
-    Left                         104
+    Left                         184
     Matrix                       -1
     Momentary                    Yes
     Picture                      (None)
@@ -2182,7 +2182,7 @@ WinButton
     Font.Size                    8
     Font.Style                   []
     Height                       24
-    Left                         168
+    Left                         260
     Matrix                       -1
     Momentary                    Yes
     Picture                      (None)
@@ -2225,7 +2225,7 @@ Label
     BGcolor                      'Office 2003 Classic'
     Caption                      'Print file'
     FGcolor                      BLACK
-    Left                         116
+    Left                         204
     Top                          76
 end
 Label
@@ -2241,7 +2241,7 @@ Label
     BGcolor                      BLACK
     Caption                      aaaaaaaaaaaaaa
     FGcolor                      WHITE
-    Left                         106
+    Left                         189
     Top                          88
 end
 Form
@@ -2267,23 +2267,23 @@ Triangle
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Solid
-    X1                           299
-    X2                           288
-    X3                           310
-    Y1                           228
-    Y2                           212
-    Y3                           212
+    X1                           467
+    X2                           456
+    X3                           478
+    Y1                           260
+    Y2                           244
+    Y3                           244
 end
 Panel
     Name                         Panel18
     Color                        'Office 2003 (Blue)'
     Height                       86
-    Left                         228
+    Left                         395
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
     State                        Raised
-    Top                          130
+    Top                          159
     Width                        84
 end
 WinButton
@@ -2304,7 +2304,7 @@ WinButton
     Font.Size                    8
     Font.Style                   []
     Height                       19
-    Left                         240
+    Left                         408
     Matrix                       -1
     Momentary                    Yes
     Picture                      (None)
@@ -2326,7 +2326,7 @@ WinButton
     StatusWhenOn.Size            8
     StatusWhenOn.Style           []
     StatusWhenOn.Visible         Yes
-    Top                          162
+    Top                          191
     Visible                      Yes
     Width                        58
     OnChanged                    ''
@@ -2352,7 +2352,7 @@ WinButton
     Font.Size                    8
     Font.Style                   []
     Height                       19
-    Left                         240
+    Left                         408
     Matrix                       -1
     Momentary                    Yes
     Picture                      (None)
@@ -2374,7 +2374,7 @@ WinButton
     StatusWhenOn.Size            8
     StatusWhenOn.Style           []
     StatusWhenOn.Visible         Yes
-    Top                          138
+    Top                          167
     Visible                      Yes
     Width                        58
     OnChanged                    ''
@@ -2400,7 +2400,7 @@ WinButton
     Font.Size                    8
     Font.Style                   []
     Height                       21
-    Left                         240
+    Left                         408
     Matrix                       -1
     Momentary                    Yes
     Picture                      (None)
@@ -2422,7 +2422,7 @@ WinButton
     StatusWhenOn.Size            8
     StatusWhenOn.Style           []
     StatusWhenOn.Visible         Yes
-    Top                          186
+    Top                          215
     Visible                      Yes
     Width                        58
     OnChanged                    ''
@@ -2434,12 +2434,12 @@ Panel
     Name                         Panel19
     Color                        'Office 2003 Classic'
     Height                       78
-    Left                         232
+    Left                         399
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Fine
     State                        Raised
-    Top                          134
+    Top                          163
     Width                        76
 end
 Form
@@ -2465,12 +2465,12 @@ Triangle
     Outlined                     No
     OutlineColor                 WHITE
     Pattern                      Solid
-    X1                           145
-    X2                           132
-    X3                           158
-    Y1                           223
-    Y2                           200
-    Y3                           200
+    X1                           253
+    X2                           240
+    X3                           266
+    Y1                           260
+    Y2                           244
+    Y3                           244
 end
 WinButton
     Name                         Winbutton18
@@ -2489,8 +2489,608 @@ WinButton
     Font.Name                    Tahoma
     Font.Size                    8
     Font.Style                   []
-    Height                       18
-    Left                         108
+    Height                       25
+    Left                         196
+    Matrix                       -1
+    Momentary                    Yes
+    Picture                      (None)
+    StatusWhenOff.BGcolor        RED
+    StatusWhenOff.Caption        ''
+    StatusWhenOff.Glow           Yes
+    StatusWhenOff.Color          WHITE
+    StatusWhenOff.Effects        []
+    StatusWhenOff.Name           Tahoma
+    StatusWhenOff.Size           8
+    StatusWhenOff.Style          []
+    StatusWhenOff.Visible        Yes
+    StatusWhenOn.BGcolor         RED
+    StatusWhenOn.Caption         ''
+    StatusWhenOn.Glow            Yes
+    StatusWhenOn.Color           WHITE
+    StatusWhenOn.Effects         []
+    StatusWhenOn.Name            Tahoma
+    StatusWhenOn.Size            8
+    StatusWhenOn.Style           []
+    StatusWhenOn.Visible         Yes
+    Top                          200
+    Visible                      Yes
+    Width                        65
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+Panel
+    Name                         Panel25
+    Color                        'Office 2003 (Blue)'
+    Height                       192
+    Left                         84
+    Outlined                     No
+    OutlineColor                 WHITE
+    Pattern                      Fine
+    State                        Raised
+    Top                          53
+    Width                        190
+end
+Panel
+    Name                         Panel26
+    Color                        'Office 2003 Classic'
+    Height                       186
+    Left                         88
+    Outlined                     No
+    OutlineColor                 WHITE
+    Pattern                      Fine
+    State                        Raised
+    Top                          56
+    Width                        182
+end
+WinButton
+    Name                         Winbutton19
+    Appearance.Alignment         Center
+    Appearance.Layout            Left
+    Appearance.PictureAlignment  Right
+    Appearance.SimpleLayout      No
+    Appearance.Spacing           3
+    AutoSizeToPicture            No
+    Bevel                        Yes
+    BevelColor                   clWhite
+    Caption                      +
+    Color                        'Office 2003 Classic'
+    Font.Color                   clWindowText
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    8
+    Font.Style                   []
+    Height                       25
+    Left                         144
+    Matrix                       -1
+    Momentary                    Yes
+    Picture                      (None)
+    StatusWhenOff.BGcolor        RED
+    StatusWhenOff.Caption        ''
+    StatusWhenOff.Glow           Yes
+    StatusWhenOff.Color          WHITE
+    StatusWhenOff.Effects        []
+    StatusWhenOff.Name           Tahoma
+    StatusWhenOff.Size           8
+    StatusWhenOff.Style          []
+    StatusWhenOff.Visible        Yes
+    StatusWhenOn.BGcolor         RED
+    StatusWhenOn.Caption         ''
+    StatusWhenOn.Glow            Yes
+    StatusWhenOn.Color           WHITE
+    StatusWhenOn.Effects         []
+    StatusWhenOn.Name            Tahoma
+    StatusWhenOn.Size            8
+    StatusWhenOn.Style           []
+    StatusWhenOn.Visible         Yes
+    Top                          64
+    Visible                      Yes
+    Width                        25
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+WinButton
+    Name                         Winbutton20
+    Appearance.Alignment         Center
+    Appearance.Layout            Left
+    Appearance.PictureAlignment  Right
+    Appearance.SimpleLayout      No
+    Appearance.Spacing           3
+    AutoSizeToPicture            No
+    Bevel                        Yes
+    BevelColor                   clWhite
+    Caption                      +
+    Color                        'Office 2003 Classic'
+    Font.Color                   clWindowText
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    8
+    Font.Style                   []
+    Height                       25
+    Left                         180
+    Matrix                       -1
+    Momentary                    Yes
+    Picture                      (None)
+    StatusWhenOff.BGcolor        RED
+    StatusWhenOff.Caption        ''
+    StatusWhenOff.Glow           Yes
+    StatusWhenOff.Color          WHITE
+    StatusWhenOff.Effects        []
+    StatusWhenOff.Name           Tahoma
+    StatusWhenOff.Size           8
+    StatusWhenOff.Style          []
+    StatusWhenOff.Visible        Yes
+    StatusWhenOn.BGcolor         RED
+    StatusWhenOn.Caption         ''
+    StatusWhenOn.Glow            Yes
+    StatusWhenOn.Color           WHITE
+    StatusWhenOn.Effects         []
+    StatusWhenOn.Name            Tahoma
+    StatusWhenOn.Size            8
+    StatusWhenOn.Style           []
+    StatusWhenOn.Visible         Yes
+    Top                          64
+    Visible                      Yes
+    Width                        25
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+WinButton
+    Name                         Winbutton22
+    Appearance.Alignment         Center
+    Appearance.Layout            Left
+    Appearance.PictureAlignment  Right
+    Appearance.SimpleLayout      No
+    Appearance.Spacing           3
+    AutoSizeToPicture            No
+    Bevel                        Yes
+    BevelColor                   clWhite
+    Caption                      +
+    Color                        'Office 2003 Classic'
+    Font.Color                   clWindowText
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    8
+    Font.Style                   []
+    Height                       25
+    Left                         210
+    Matrix                       -1
+    Momentary                    Yes
+    Picture                      (None)
+    StatusWhenOff.BGcolor        RED
+    StatusWhenOff.Caption        ''
+    StatusWhenOff.Glow           Yes
+    StatusWhenOff.Color          WHITE
+    StatusWhenOff.Effects        []
+    StatusWhenOff.Name           Tahoma
+    StatusWhenOff.Size           8
+    StatusWhenOff.Style          []
+    StatusWhenOff.Visible        Yes
+    StatusWhenOn.BGcolor         RED
+    StatusWhenOn.Caption         ''
+    StatusWhenOn.Glow            Yes
+    StatusWhenOn.Color           WHITE
+    StatusWhenOn.Effects         []
+    StatusWhenOn.Name            Tahoma
+    StatusWhenOn.Size            8
+    StatusWhenOn.Style           []
+    StatusWhenOn.Visible         Yes
+    Top                          64
+    Visible                      Yes
+    Width                        25
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+WinButton
+    Name                         Winbutton23
+    Appearance.Alignment         Center
+    Appearance.Layout            Left
+    Appearance.PictureAlignment  Right
+    Appearance.SimpleLayout      No
+    Appearance.Spacing           3
+    AutoSizeToPicture            No
+    Bevel                        Yes
+    BevelColor                   clWhite
+    Caption                      +
+    Color                        'Office 2003 Classic'
+    Font.Color                   clWindowText
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    8
+    Font.Style                   []
+    Height                       25
+    Left                         240
+    Matrix                       -1
+    Momentary                    Yes
+    Picture                      (None)
+    StatusWhenOff.BGcolor        RED
+    StatusWhenOff.Caption        ''
+    StatusWhenOff.Glow           Yes
+    StatusWhenOff.Color          WHITE
+    StatusWhenOff.Effects        []
+    StatusWhenOff.Name           Tahoma
+    StatusWhenOff.Size           8
+    StatusWhenOff.Style          []
+    StatusWhenOff.Visible        Yes
+    StatusWhenOn.BGcolor         RED
+    StatusWhenOn.Caption         ''
+    StatusWhenOn.Glow            Yes
+    StatusWhenOn.Color           WHITE
+    StatusWhenOn.Effects         []
+    StatusWhenOn.Name            Tahoma
+    StatusWhenOn.Size            8
+    StatusWhenOn.Style           []
+    StatusWhenOn.Visible         Yes
+    Top                          64
+    Visible                      Yes
+    Width                        25
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+WinButton
+    Name                         Winbutton26
+    Appearance.Alignment         Center
+    Appearance.Layout            Left
+    Appearance.PictureAlignment  Right
+    Appearance.SimpleLayout      No
+    Appearance.Spacing           3
+    AutoSizeToPicture            No
+    Bevel                        Yes
+    BevelColor                   clWhite
+    Caption                      -
+    Color                        'Office 2003 Classic'
+    Font.Color                   clWindowText
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    8
+    Font.Style                   []
+    Height                       25
+    Left                         144
+    Matrix                       -1
+    Momentary                    Yes
+    Picture                      (None)
+    StatusWhenOff.BGcolor        RED
+    StatusWhenOff.Caption        ''
+    StatusWhenOff.Glow           Yes
+    StatusWhenOff.Color          WHITE
+    StatusWhenOff.Effects        []
+    StatusWhenOff.Name           Tahoma
+    StatusWhenOff.Size           8
+    StatusWhenOff.Style          []
+    StatusWhenOff.Visible        Yes
+    StatusWhenOn.BGcolor         RED
+    StatusWhenOn.Caption         ''
+    StatusWhenOn.Glow            Yes
+    StatusWhenOn.Color           WHITE
+    StatusWhenOn.Effects         []
+    StatusWhenOn.Name            Tahoma
+    StatusWhenOn.Size            8
+    StatusWhenOn.Style           []
+    StatusWhenOn.Visible         Yes
+    Top                          124
+    Visible                      Yes
+    Width                        25
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+WinButton
+    Name                         Winbutton27
+    Appearance.Alignment         Center
+    Appearance.Layout            Left
+    Appearance.PictureAlignment  Right
+    Appearance.SimpleLayout      No
+    Appearance.Spacing           3
+    AutoSizeToPicture            No
+    Bevel                        Yes
+    BevelColor                   clWhite
+    Caption                      -
+    Color                        'Office 2003 Classic'
+    Font.Color                   clWindowText
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    8
+    Font.Style                   []
+    Height                       25
+    Left                         180
+    Matrix                       -1
+    Momentary                    Yes
+    Picture                      (None)
+    StatusWhenOff.BGcolor        RED
+    StatusWhenOff.Caption        ''
+    StatusWhenOff.Glow           Yes
+    StatusWhenOff.Color          WHITE
+    StatusWhenOff.Effects        []
+    StatusWhenOff.Name           Tahoma
+    StatusWhenOff.Size           8
+    StatusWhenOff.Style          []
+    StatusWhenOff.Visible        Yes
+    StatusWhenOn.BGcolor         RED
+    StatusWhenOn.Caption         ''
+    StatusWhenOn.Glow            Yes
+    StatusWhenOn.Color           WHITE
+    StatusWhenOn.Effects         []
+    StatusWhenOn.Name            Tahoma
+    StatusWhenOn.Size            8
+    StatusWhenOn.Style           []
+    StatusWhenOn.Visible         Yes
+    Top                          124
+    Visible                      Yes
+    Width                        25
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+WinButton
+    Name                         Winbutton28
+    Appearance.Alignment         Center
+    Appearance.Layout            Left
+    Appearance.PictureAlignment  Right
+    Appearance.SimpleLayout      No
+    Appearance.Spacing           3
+    AutoSizeToPicture            No
+    Bevel                        Yes
+    BevelColor                   clWhite
+    Caption                      -
+    Color                        'Office 2003 Classic'
+    Font.Color                   clWindowText
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    8
+    Font.Style                   []
+    Height                       25
+    Left                         210
+    Matrix                       -1
+    Momentary                    Yes
+    Picture                      (None)
+    StatusWhenOff.BGcolor        RED
+    StatusWhenOff.Caption        ''
+    StatusWhenOff.Glow           Yes
+    StatusWhenOff.Color          WHITE
+    StatusWhenOff.Effects        []
+    StatusWhenOff.Name           Tahoma
+    StatusWhenOff.Size           8
+    StatusWhenOff.Style          []
+    StatusWhenOff.Visible        Yes
+    StatusWhenOn.BGcolor         RED
+    StatusWhenOn.Caption         ''
+    StatusWhenOn.Glow            Yes
+    StatusWhenOn.Color           WHITE
+    StatusWhenOn.Effects         []
+    StatusWhenOn.Name            Tahoma
+    StatusWhenOn.Size            8
+    StatusWhenOn.Style           []
+    StatusWhenOn.Visible         Yes
+    Top                          124
+    Visible                      Yes
+    Width                        25
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+WinButton
+    Name                         Winbutton29
+    Appearance.Alignment         Center
+    Appearance.Layout            Left
+    Appearance.PictureAlignment  Right
+    Appearance.SimpleLayout      No
+    Appearance.Spacing           3
+    AutoSizeToPicture            No
+    Bevel                        Yes
+    BevelColor                   clWhite
+    Caption                      -
+    Color                        'Office 2003 Classic'
+    Font.Color                   clWindowText
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    8
+    Font.Style                   []
+    Height                       25
+    Left                         240
+    Matrix                       -1
+    Momentary                    Yes
+    Picture                      (None)
+    StatusWhenOff.BGcolor        RED
+    StatusWhenOff.Caption        ''
+    StatusWhenOff.Glow           Yes
+    StatusWhenOff.Color          WHITE
+    StatusWhenOff.Effects        []
+    StatusWhenOff.Name           Tahoma
+    StatusWhenOff.Size           8
+    StatusWhenOff.Style          []
+    StatusWhenOff.Visible        Yes
+    StatusWhenOn.BGcolor         RED
+    StatusWhenOn.Caption         ''
+    StatusWhenOn.Glow            Yes
+    StatusWhenOn.Color           WHITE
+    StatusWhenOn.Effects         []
+    StatusWhenOn.Name            Tahoma
+    StatusWhenOn.Size            8
+    StatusWhenOn.Style           []
+    StatusWhenOn.Visible         Yes
+    Top                          124
+    Visible                      Yes
+    Width                        25
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+WinButton
+    Name                         Winbutton30
+    Appearance.Alignment         Center
+    Appearance.Layout            Left
+    Appearance.PictureAlignment  Right
+    Appearance.SimpleLayout      No
+    Appearance.Spacing           3
+    AutoSizeToPicture            No
+    Bevel                        Yes
+    BevelColor                   clWhite
+    Caption                      +/-
+    Color                        'Office 2003 Classic'
+    Font.Color                   clWindowText
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    8
+    Font.Style                   []
+    Height                       25
+    Left                         96
+    Matrix                       -1
+    Momentary                    Yes
+    Picture                      (None)
+    StatusWhenOff.BGcolor        RED
+    StatusWhenOff.Caption        ''
+    StatusWhenOff.Glow           Yes
+    StatusWhenOff.Color          WHITE
+    StatusWhenOff.Effects        []
+    StatusWhenOff.Name           Tahoma
+    StatusWhenOff.Size           8
+    StatusWhenOff.Style          []
+    StatusWhenOff.Visible        Yes
+    StatusWhenOn.BGcolor         RED
+    StatusWhenOn.Caption         ''
+    StatusWhenOn.Glow            Yes
+    StatusWhenOn.Color           WHITE
+    StatusWhenOn.Effects         []
+    StatusWhenOn.Name            Tahoma
+    StatusWhenOn.Size            8
+    StatusWhenOn.Style           []
+    StatusWhenOn.Visible         Yes
+    Top                          96
+    Visible                      Yes
+    Width                        33
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+Label
+    Name                         Label31
+    4DGLFont.Font                FONT3
+    4DGLFont.Bold                No
+    4DGLFont.Italic              No
+    4DGLFont.Inverse             No
+    4DGLFont.Underline           No
+    4DGLFont.MagWidth            1
+    4DGLFont.MagHeight           1
+    4DGLFont.Opaque              Yes
+    BGcolor                      'Office 2003 Classic'
+    Caption                      9
+    FGcolor                      BLACK
+    Left                         134
+    Top                          96
+end
+Label
+    Name                         Label32
+    4DGLFont.Font                FONT3
+    4DGLFont.Bold                No
+    4DGLFont.Italic              No
+    4DGLFont.Inverse             No
+    4DGLFont.Underline           No
+    4DGLFont.MagWidth            2
+    4DGLFont.MagHeight           2
+    4DGLFont.Opaque              Yes
+    BGcolor                      'Office 2003 Classic'
+    Caption                      9
+    FGcolor                      BLACK
+    Left                         148
+    Top                          96
+end
+Label
+    Name                         Label33
+    4DGLFont.Font                FONT3
+    4DGLFont.Bold                No
+    4DGLFont.Italic              No
+    4DGLFont.Inverse             No
+    4DGLFont.Underline           No
+    4DGLFont.MagWidth            2
+    4DGLFont.MagHeight           2
+    4DGLFont.Opaque              Yes
+    BGcolor                      'Office 2003 Classic'
+    Caption                      9
+    FGcolor                      BLACK
+    Left                         184
+    Top                          96
+end
+Label
+    Name                         Label34
+    4DGLFont.Font                FONT3
+    4DGLFont.Bold                No
+    4DGLFont.Italic              No
+    4DGLFont.Inverse             No
+    4DGLFont.Underline           No
+    4DGLFont.MagWidth            2
+    4DGLFont.MagHeight           2
+    4DGLFont.Opaque              Yes
+    BGcolor                      'Office 2003 Classic'
+    Caption                      9
+    FGcolor                      BLACK
+    Left                         214
+    Top                          96
+end
+Label
+    Name                         Label35
+    4DGLFont.Font                FONT3
+    4DGLFont.Bold                No
+    4DGLFont.Italic              No
+    4DGLFont.Inverse             No
+    4DGLFont.Underline           No
+    4DGLFont.MagWidth            2
+    4DGLFont.MagHeight           2
+    4DGLFont.Opaque              Yes
+    BGcolor                      'Office 2003 Classic'
+    Caption                      9
+    FGcolor                      BLACK
+    Left                         244
+    Top                          96
+end
+Label
+    Name                         Label36
+    4DGLFont.Font                FONT3
+    4DGLFont.Bold                No
+    4DGLFont.Italic              No
+    4DGLFont.Inverse             No
+    4DGLFont.Underline           No
+    4DGLFont.MagWidth            1
+    4DGLFont.MagHeight           1
+    4DGLFont.Opaque              Yes
+    BGcolor                      'Office 2003 Classic'
+    Caption                      ,
+    FGcolor                      BLACK
+    Left                         169
+    Top                          108
+end
+WinButton
+    Name                         Winbutton21
+    Appearance.Alignment         Center
+    Appearance.Layout            Left
+    Appearance.PictureAlignment  Right
+    Appearance.SimpleLayout      No
+    Appearance.Spacing           3
+    AutoSizeToPicture            No
+    Bevel                        Yes
+    BevelColor                   clWhite
+    Caption                      'set Offset'
+    Color                        'Office 2003 Classic'
+    Font.Color                   clWindowText
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    8
+    Font.Style                   []
+    Height                       25
+    Left                         196
     Matrix                       -1
     Momentary                    Yes
     Picture                      (None)
@@ -2520,682 +3120,10 @@ WinButton
     OnTouchPressed               ''
     OnTouchReleased              ''
 end
-Panel
-    Name                         Panel20
-    Color                        SILVER
-    Height                       30
-    Left                         82
-    Outlined                     No
-    OutlineColor                 WHITE
-    Pattern                      Fine
-    State                        Raised
-    Top                          80
-    Width                        22
-end
-Panel
-    Name                         Panel21
-    Color                        SILVER
-    Height                       30
-    Left                         112
-    Outlined                     No
-    OutlineColor                 WHITE
-    Pattern                      Fine
-    State                        Raised
-    Top                          80
-    Width                        22
-end
-Panel
-    Name                         Panel22
-    Color                        SILVER
-    Height                       30
-    Left                         146
-    Outlined                     No
-    OutlineColor                 WHITE
-    Pattern                      Fine
-    State                        Raised
-    Top                          80
-    Width                        22
-end
-Panel
-    Name                         Panel23
-    Color                        SILVER
-    Height                       30
-    Left                         170
-    Outlined                     No
-    OutlineColor                 WHITE
-    Pattern                      Fine
-    State                        Raised
-    Top                          80
-    Width                        22
-end
-Panel
-    Name                         Panel24
-    Color                        SILVER
-    Height                       30
-    Left                         194
-    Outlined                     No
-    OutlineColor                 WHITE
-    Pattern                      Fine
-    State                        Raised
-    Top                          80
-    Width                        22
-end
-Panel
-    Name                         Panel25
-    Color                        'Office 2003 (Blue)'
-    Height                       152
-    Left                         36
-    Outlined                     No
-    OutlineColor                 WHITE
-    Pattern                      Fine
-    State                        Raised
-    Top                          53
-    Width                        190
-end
-Panel
-    Name                         Panel26
-    Color                        'Office 2003 Classic'
-    Height                       144
-    Left                         40
-    Outlined                     No
-    OutlineColor                 WHITE
-    Pattern                      Fine
-    State                        Raised
-    Top                          57
-    Width                        182
-end
-WinButton
-    Name                         Winbutton19
-    Appearance.Alignment         Center
-    Appearance.Layout            Left
-    Appearance.PictureAlignment  Right
-    Appearance.SimpleLayout      No
-    Appearance.Spacing           3
-    AutoSizeToPicture            No
-    Bevel                        Yes
-    BevelColor                   clWhite
-    Caption                      +
-    Color                        'Office 2003 Classic'
-    Font.Color                   clWindowText
-    Font.Effects                 []
-    Font.Name                    Tahoma
-    Font.Size                    8
-    Font.Style                   []
-    Height                       14
-    Left                         111
-    Matrix                       -1
-    Momentary                    Yes
-    Picture                      (None)
-    StatusWhenOff.BGcolor        RED
-    StatusWhenOff.Caption        ''
-    StatusWhenOff.Glow           Yes
-    StatusWhenOff.Color          WHITE
-    StatusWhenOff.Effects        []
-    StatusWhenOff.Name           Tahoma
-    StatusWhenOff.Size           8
-    StatusWhenOff.Style          []
-    StatusWhenOff.Visible        Yes
-    StatusWhenOn.BGcolor         RED
-    StatusWhenOn.Caption         ''
-    StatusWhenOn.Glow            Yes
-    StatusWhenOn.Color           WHITE
-    StatusWhenOn.Effects         []
-    StatusWhenOn.Name            Tahoma
-    StatusWhenOn.Size            8
-    StatusWhenOn.Style           []
-    StatusWhenOn.Visible         Yes
-    Top                          61
-    Visible                      Yes
-    Width                        20
-    OnChanged                    ''
-    OnTouchMoving                ''
-    OnTouchPressed               ''
-    OnTouchReleased              ''
-end
-WinButton
-    Name                         Winbutton20
-    Appearance.Alignment         Center
-    Appearance.Layout            Left
-    Appearance.PictureAlignment  Right
-    Appearance.SimpleLayout      No
-    Appearance.Spacing           3
-    AutoSizeToPicture            No
-    Bevel                        Yes
-    BevelColor                   clWhite
-    Caption                      +
-    Color                        'Office 2003 Classic'
-    Font.Color                   clWindowText
-    Font.Effects                 []
-    Font.Name                    Tahoma
-    Font.Size                    8
-    Font.Style                   []
-    Height                       14
-    Left                         147
-    Matrix                       -1
-    Momentary                    Yes
-    Picture                      (None)
-    StatusWhenOff.BGcolor        RED
-    StatusWhenOff.Caption        ''
-    StatusWhenOff.Glow           Yes
-    StatusWhenOff.Color          WHITE
-    StatusWhenOff.Effects        []
-    StatusWhenOff.Name           Tahoma
-    StatusWhenOff.Size           8
-    StatusWhenOff.Style          []
-    StatusWhenOff.Visible        Yes
-    StatusWhenOn.BGcolor         RED
-    StatusWhenOn.Caption         ''
-    StatusWhenOn.Glow            Yes
-    StatusWhenOn.Color           WHITE
-    StatusWhenOn.Effects         []
-    StatusWhenOn.Name            Tahoma
-    StatusWhenOn.Size            8
-    StatusWhenOn.Style           []
-    StatusWhenOn.Visible         Yes
-    Top                          61
-    Visible                      Yes
-    Width                        20
-    OnChanged                    ''
-    OnTouchMoving                ''
-    OnTouchPressed               ''
-    OnTouchReleased              ''
-end
-WinButton
-    Name                         Winbutton22
-    Appearance.Alignment         Center
-    Appearance.Layout            Left
-    Appearance.PictureAlignment  Right
-    Appearance.SimpleLayout      No
-    Appearance.Spacing           3
-    AutoSizeToPicture            No
-    Bevel                        Yes
-    BevelColor                   clWhite
-    Caption                      +
-    Color                        'Office 2003 Classic'
-    Font.Color                   clWindowText
-    Font.Effects                 []
-    Font.Name                    Tahoma
-    Font.Size                    8
-    Font.Style                   []
-    Height                       14
-    Left                         171
-    Matrix                       -1
-    Momentary                    Yes
-    Picture                      (None)
-    StatusWhenOff.BGcolor        RED
-    StatusWhenOff.Caption        ''
-    StatusWhenOff.Glow           Yes
-    StatusWhenOff.Color          WHITE
-    StatusWhenOff.Effects        []
-    StatusWhenOff.Name           Tahoma
-    StatusWhenOff.Size           8
-    StatusWhenOff.Style          []
-    StatusWhenOff.Visible        Yes
-    StatusWhenOn.BGcolor         RED
-    StatusWhenOn.Caption         ''
-    StatusWhenOn.Glow            Yes
-    StatusWhenOn.Color           WHITE
-    StatusWhenOn.Effects         []
-    StatusWhenOn.Name            Tahoma
-    StatusWhenOn.Size            8
-    StatusWhenOn.Style           []
-    StatusWhenOn.Visible         Yes
-    Top                          61
-    Visible                      Yes
-    Width                        20
-    OnChanged                    ''
-    OnTouchMoving                ''
-    OnTouchPressed               ''
-    OnTouchReleased              ''
-end
-WinButton
-    Name                         Winbutton23
-    Appearance.Alignment         Center
-    Appearance.Layout            Left
-    Appearance.PictureAlignment  Right
-    Appearance.SimpleLayout      No
-    Appearance.Spacing           3
-    AutoSizeToPicture            No
-    Bevel                        Yes
-    BevelColor                   clWhite
-    Caption                      +
-    Color                        'Office 2003 Classic'
-    Font.Color                   clWindowText
-    Font.Effects                 []
-    Font.Name                    Tahoma
-    Font.Size                    8
-    Font.Style                   []
-    Height                       14
-    Left                         195
-    Matrix                       -1
-    Momentary                    Yes
-    Picture                      (None)
-    StatusWhenOff.BGcolor        RED
-    StatusWhenOff.Caption        ''
-    StatusWhenOff.Glow           Yes
-    StatusWhenOff.Color          WHITE
-    StatusWhenOff.Effects        []
-    StatusWhenOff.Name           Tahoma
-    StatusWhenOff.Size           8
-    StatusWhenOff.Style          []
-    StatusWhenOff.Visible        Yes
-    StatusWhenOn.BGcolor         RED
-    StatusWhenOn.Caption         ''
-    StatusWhenOn.Glow            Yes
-    StatusWhenOn.Color           WHITE
-    StatusWhenOn.Effects         []
-    StatusWhenOn.Name            Tahoma
-    StatusWhenOn.Size            8
-    StatusWhenOn.Style           []
-    StatusWhenOn.Visible         Yes
-    Top                          61
-    Visible                      Yes
-    Width                        20
-    OnChanged                    ''
-    OnTouchMoving                ''
-    OnTouchPressed               ''
-    OnTouchReleased              ''
-end
-WinButton
-    Name                         Winbutton26
-    Appearance.Alignment         Center
-    Appearance.Layout            Left
-    Appearance.PictureAlignment  Right
-    Appearance.SimpleLayout      No
-    Appearance.Spacing           3
-    AutoSizeToPicture            No
-    Bevel                        Yes
-    BevelColor                   clWhite
-    Caption                      -
-    Color                        'Office 2003 Classic'
-    Font.Color                   clWindowText
-    Font.Effects                 []
-    Font.Name                    Tahoma
-    Font.Size                    8
-    Font.Style                   []
-    Height                       14
-    Left                         111
-    Matrix                       -1
-    Momentary                    Yes
-    Picture                      (None)
-    StatusWhenOff.BGcolor        RED
-    StatusWhenOff.Caption        ''
-    StatusWhenOff.Glow           Yes
-    StatusWhenOff.Color          WHITE
-    StatusWhenOff.Effects        []
-    StatusWhenOff.Name           Tahoma
-    StatusWhenOff.Size           8
-    StatusWhenOff.Style          []
-    StatusWhenOff.Visible        Yes
-    StatusWhenOn.BGcolor         RED
-    StatusWhenOn.Caption         ''
-    StatusWhenOn.Glow            Yes
-    StatusWhenOn.Color           WHITE
-    StatusWhenOn.Effects         []
-    StatusWhenOn.Name            Tahoma
-    StatusWhenOn.Size            8
-    StatusWhenOn.Style           []
-    StatusWhenOn.Visible         Yes
-    Top                          115
-    Visible                      Yes
-    Width                        20
-    OnChanged                    ''
-    OnTouchMoving                ''
-    OnTouchPressed               ''
-    OnTouchReleased              ''
-end
-WinButton
-    Name                         Winbutton27
-    Appearance.Alignment         Center
-    Appearance.Layout            Left
-    Appearance.PictureAlignment  Right
-    Appearance.SimpleLayout      No
-    Appearance.Spacing           3
-    AutoSizeToPicture            No
-    Bevel                        Yes
-    BevelColor                   clWhite
-    Caption                      -
-    Color                        'Office 2003 Classic'
-    Font.Color                   clWindowText
-    Font.Effects                 []
-    Font.Name                    Tahoma
-    Font.Size                    8
-    Font.Style                   []
-    Height                       14
-    Left                         147
-    Matrix                       -1
-    Momentary                    Yes
-    Picture                      (None)
-    StatusWhenOff.BGcolor        RED
-    StatusWhenOff.Caption        ''
-    StatusWhenOff.Glow           Yes
-    StatusWhenOff.Color          WHITE
-    StatusWhenOff.Effects        []
-    StatusWhenOff.Name           Tahoma
-    StatusWhenOff.Size           8
-    StatusWhenOff.Style          []
-    StatusWhenOff.Visible        Yes
-    StatusWhenOn.BGcolor         RED
-    StatusWhenOn.Caption         ''
-    StatusWhenOn.Glow            Yes
-    StatusWhenOn.Color           WHITE
-    StatusWhenOn.Effects         []
-    StatusWhenOn.Name            Tahoma
-    StatusWhenOn.Size            8
-    StatusWhenOn.Style           []
-    StatusWhenOn.Visible         Yes
-    Top                          115
-    Visible                      Yes
-    Width                        20
-    OnChanged                    ''
-    OnTouchMoving                ''
-    OnTouchPressed               ''
-    OnTouchReleased              ''
-end
-WinButton
-    Name                         Winbutton28
-    Appearance.Alignment         Center
-    Appearance.Layout            Left
-    Appearance.PictureAlignment  Right
-    Appearance.SimpleLayout      No
-    Appearance.Spacing           3
-    AutoSizeToPicture            No
-    Bevel                        Yes
-    BevelColor                   clWhite
-    Caption                      -
-    Color                        'Office 2003 Classic'
-    Font.Color                   clWindowText
-    Font.Effects                 []
-    Font.Name                    Tahoma
-    Font.Size                    8
-    Font.Style                   []
-    Height                       14
-    Left                         171
-    Matrix                       -1
-    Momentary                    Yes
-    Picture                      (None)
-    StatusWhenOff.BGcolor        RED
-    StatusWhenOff.Caption        ''
-    StatusWhenOff.Glow           Yes
-    StatusWhenOff.Color          WHITE
-    StatusWhenOff.Effects        []
-    StatusWhenOff.Name           Tahoma
-    StatusWhenOff.Size           8
-    StatusWhenOff.Style          []
-    StatusWhenOff.Visible        Yes
-    StatusWhenOn.BGcolor         RED
-    StatusWhenOn.Caption         ''
-    StatusWhenOn.Glow            Yes
-    StatusWhenOn.Color           WHITE
-    StatusWhenOn.Effects         []
-    StatusWhenOn.Name            Tahoma
-    StatusWhenOn.Size            8
-    StatusWhenOn.Style           []
-    StatusWhenOn.Visible         Yes
-    Top                          115
-    Visible                      Yes
-    Width                        20
-    OnChanged                    ''
-    OnTouchMoving                ''
-    OnTouchPressed               ''
-    OnTouchReleased              ''
-end
-WinButton
-    Name                         Winbutton29
-    Appearance.Alignment         Center
-    Appearance.Layout            Left
-    Appearance.PictureAlignment  Right
-    Appearance.SimpleLayout      No
-    Appearance.Spacing           3
-    AutoSizeToPicture            No
-    Bevel                        Yes
-    BevelColor                   clWhite
-    Caption                      -
-    Color                        'Office 2003 Classic'
-    Font.Color                   clWindowText
-    Font.Effects                 []
-    Font.Name                    Tahoma
-    Font.Size                    8
-    Font.Style                   []
-    Height                       14
-    Left                         195
-    Matrix                       -1
-    Momentary                    Yes
-    Picture                      (None)
-    StatusWhenOff.BGcolor        RED
-    StatusWhenOff.Caption        ''
-    StatusWhenOff.Glow           Yes
-    StatusWhenOff.Color          WHITE
-    StatusWhenOff.Effects        []
-    StatusWhenOff.Name           Tahoma
-    StatusWhenOff.Size           8
-    StatusWhenOff.Style          []
-    StatusWhenOff.Visible        Yes
-    StatusWhenOn.BGcolor         RED
-    StatusWhenOn.Caption         ''
-    StatusWhenOn.Glow            Yes
-    StatusWhenOn.Color           WHITE
-    StatusWhenOn.Effects         []
-    StatusWhenOn.Name            Tahoma
-    StatusWhenOn.Size            8
-    StatusWhenOn.Style           []
-    StatusWhenOn.Visible         Yes
-    Top                          115
-    Visible                      Yes
-    Width                        20
-    OnChanged                    ''
-    OnTouchMoving                ''
-    OnTouchPressed               ''
-    OnTouchReleased              ''
-end
-WinButton
-    Name                         Winbutton30
-    Appearance.Alignment         Center
-    Appearance.Layout            Left
-    Appearance.PictureAlignment  Right
-    Appearance.SimpleLayout      No
-    Appearance.Spacing           3
-    AutoSizeToPicture            No
-    Bevel                        Yes
-    BevelColor                   clWhite
-    Caption                      +/-
-    Color                        'Office 2003 Classic'
-    Font.Color                   clWindowText
-    Font.Effects                 []
-    Font.Name                    Tahoma
-    Font.Size                    8
-    Font.Style                   []
-    Height                       14
-    Left                         44
-    Matrix                       -1
-    Momentary                    Yes
-    Picture                      (None)
-    StatusWhenOff.BGcolor        RED
-    StatusWhenOff.Caption        ''
-    StatusWhenOff.Glow           Yes
-    StatusWhenOff.Color          WHITE
-    StatusWhenOff.Effects        []
-    StatusWhenOff.Name           Tahoma
-    StatusWhenOff.Size           8
-    StatusWhenOff.Style          []
-    StatusWhenOff.Visible        Yes
-    StatusWhenOn.BGcolor         RED
-    StatusWhenOn.Caption         ''
-    StatusWhenOn.Glow            Yes
-    StatusWhenOn.Color           WHITE
-    StatusWhenOn.Effects         []
-    StatusWhenOn.Name            Tahoma
-    StatusWhenOn.Size            8
-    StatusWhenOn.Style           []
-    StatusWhenOn.Visible         Yes
-    Top                          87
-    Visible                      Yes
-    Width                        33
-    OnChanged                    ''
-    OnTouchMoving                ''
-    OnTouchPressed               ''
-    OnTouchReleased              ''
-end
-Label
-    Name                         Label31
-    4DGLFont.Font                FONT3
-    4DGLFont.Bold                No
-    4DGLFont.Italic              No
-    4DGLFont.Inverse             No
-    4DGLFont.Underline           No
-    4DGLFont.MagWidth            1
-    4DGLFont.MagHeight           1
-    4DGLFont.Opaque              Yes
-    BGcolor                      SILVER
-    Caption                      9
-    FGcolor                      BLACK
-    Left                         87
-    Top                          84
-end
-Label
-    Name                         Label32
-    4DGLFont.Font                FONT3
-    4DGLFont.Bold                No
-    4DGLFont.Italic              No
-    4DGLFont.Inverse             No
-    4DGLFont.Underline           No
-    4DGLFont.MagWidth            2
-    4DGLFont.MagHeight           2
-    4DGLFont.Opaque              Yes
-    BGcolor                      SILVER
-    Caption                      9
-    FGcolor                      BLACK
-    Left                         117
-    Top                          84
-end
-Label
-    Name                         Label33
-    4DGLFont.Font                FONT3
-    4DGLFont.Bold                No
-    4DGLFont.Italic              No
-    4DGLFont.Inverse             No
-    4DGLFont.Underline           No
-    4DGLFont.MagWidth            2
-    4DGLFont.MagHeight           2
-    4DGLFont.Opaque              Yes
-    BGcolor                      SILVER
-    Caption                      9
-    FGcolor                      BLACK
-    Left                         151
-    Top                          84
-end
-Label
-    Name                         Label34
-    4DGLFont.Font                FONT3
-    4DGLFont.Bold                No
-    4DGLFont.Italic              No
-    4DGLFont.Inverse             No
-    4DGLFont.Underline           No
-    4DGLFont.MagWidth            2
-    4DGLFont.MagHeight           2
-    4DGLFont.Opaque              Yes
-    BGcolor                      SILVER
-    Caption                      9
-    FGcolor                      BLACK
-    Left                         175
-    Top                          84
-end
-Label
-    Name                         Label35
-    4DGLFont.Font                FONT3
-    4DGLFont.Bold                No
-    4DGLFont.Italic              No
-    4DGLFont.Inverse             No
-    4DGLFont.Underline           No
-    4DGLFont.MagWidth            2
-    4DGLFont.MagHeight           2
-    4DGLFont.Opaque              Yes
-    BGcolor                      SILVER
-    Caption                      9
-    FGcolor                      BLACK
-    Left                         199
-    Top                          84
-end
-Label
-    Name                         Label36
-    4DGLFont.Font                FONT3
-    4DGLFont.Bold                No
-    4DGLFont.Italic              No
-    4DGLFont.Inverse             No
-    4DGLFont.Underline           No
-    4DGLFont.MagWidth            1
-    4DGLFont.MagHeight           1
-    4DGLFont.Opaque              Yes
-    BGcolor                      SILVER
-    Caption                      ,
-    FGcolor                      BLACK
-    Left                         135
-    Top                          92
-end
-WinButton
-    Name                         Winbutton21
-    Appearance.Alignment         Center
-    Appearance.Layout            Left
-    Appearance.PictureAlignment  Right
-    Appearance.SimpleLayout      No
-    Appearance.Spacing           3
-    AutoSizeToPicture            No
-    Bevel                        Yes
-    BevelColor                   clWhite
-    Caption                      'set Offset'
-    Color                        'Office 2003 Classic'
-    Font.Color                   clWindowText
-    Font.Effects                 []
-    Font.Name                    Tahoma
-    Font.Size                    8
-    Font.Style                   []
-    Height                       18
-    Left                         108
-    Matrix                       -1
-    Momentary                    Yes
-    Picture                      (None)
-    StatusWhenOff.BGcolor        RED
-    StatusWhenOff.Caption        ''
-    StatusWhenOff.Glow           Yes
-    StatusWhenOff.Color          WHITE
-    StatusWhenOff.Effects        []
-    StatusWhenOff.Name           Tahoma
-    StatusWhenOff.Size           8
-    StatusWhenOff.Style          []
-    StatusWhenOff.Visible        Yes
-    StatusWhenOn.BGcolor         RED
-    StatusWhenOn.Caption         ''
-    StatusWhenOn.Glow            Yes
-    StatusWhenOn.Color           WHITE
-    StatusWhenOn.Effects         []
-    StatusWhenOn.Name            Tahoma
-    StatusWhenOn.Size            8
-    StatusWhenOn.Style           []
-    StatusWhenOn.Visible         Yes
-    Top                          144
-    Visible                      Yes
-    Width                        65
-    OnChanged                    ''
-    OnTouchMoving                ''
-    OnTouchPressed               ''
-    OnTouchReleased              ''
-end
-Rectangle
-    Name                         Rectangle1
-    Color                        YELLOW
-    Filled                       Yes
-    Height                       15
-    Left                         112
-    Outlined                     Yes
-    OutlineColor                 WHITE
-    Pattern                      Fine
-    Top                          170
-    Width                        59
-end
 Form
     Name                         BootSplash
     Bgtype                       Color
-    Color                        BLACK
+    Color                        WHITE
     Image                        (None)
     Source.Height                0
     Source.Left                  0
@@ -3218,11 +3146,11 @@ Label
     4DGLFont.MagWidth            1
     4DGLFont.MagHeight           1
     4DGLFont.Opaque              Yes
-    BGcolor                      BLACK
-    Caption                      '3D Printer'
-    FGcolor                      WHITE
-    Left                         124
-    Top                          180
+    BGcolor                      WHITE
+    Caption                      FDM-Tec
+    FGcolor                      BLACK
+    Left                         216
+    Top                          196
 end
 Label
     Name                         Label38
@@ -3234,10 +3162,10 @@ Label
     4DGLFont.MagWidth            1
     4DGLFont.MagHeight           1
     4DGLFont.Opaque              Yes
-    BGcolor                      BLACK
+    BGcolor                      WHITE
     Caption                      'LCD Interface v. '
-    FGcolor                      WHITE
-    Left                         100
+    FGcolor                      BLACK
+    Left                         176
     Top                          220
 end
 Label
@@ -3250,11 +3178,11 @@ Label
     4DGLFont.MagWidth            1
     4DGLFont.MagHeight           1
     4DGLFont.Opaque              Yes
-    BGcolor                      BLACK
-    Caption                      marcomail.anto@gmail.com
-    FGcolor                      WHITE
-    Left                         84
-    Top                          232
+    BGcolor                      WHITE
+    Caption                      www.FDM-Tec.de
+    FGcolor                      BLACK
+    Left                         192
+    Top                          240
 end
 Label
     Name                         Label40
@@ -3266,27 +3194,11 @@ Label
     4DGLFont.MagWidth            1
     4DGLFont.MagHeight           1
     4DGLFont.Opaque              Yes
-    BGcolor                      BLACK
+    BGcolor                      WHITE
     Caption                      0.1
-    FGcolor                      WHITE
-    Left                         212
+    FGcolor                      BLACK
+    Left                         284
     Top                          220
-end
-Image
-    Name                         Image4
-    Height                       137
-    Image                        Reprap_logo.png
-    Left                         112
-    Source.Height                137
-    Source.Left                  0
-    Source.Top                   0
-    Source.Width                 110
-    Visible                      Yes
-    Top                          32
-    Width                        110
-    OnTouchMoving                ''
-    OnTouchPressed               ''
-    OnTouchReleased              ''
 end
 Form
     Name                         GcodeViewer
